@@ -1,0 +1,2395 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@200;300;400;500;600;700&family=Merienda:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+section{
+    width: 100% !important;
+    overflow: hidden;
+}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+    bottom: var(--swiper-pagination-bottom,-4px) !important;
+}
+.owl-carousel {
+    display: block !important;
+}
+
+.owl-carousel .owl-dots.disabled,
+.owl-carousel {
+    display: block !important;
+}
+.swiper-grid-column>.swiper-wrapper {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+}
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: Overthink;
+    src: url("font/Overthink.otf");
+}
+
+:root {
+    --font1: 'Kalnia', serif;
+    --font2: 'Overthink';
+    --font3: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*CUSTOMISED MOUSE POINTER*/
+
+.cursor{
+	width: 12px;
+	height: 12px;
+	border-radius: 100%;
+	background: rgb(174, 174, 174);
+	opacity: 0.8;
+	transform: translate(-50%, -50%);
+    position: fixed;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+/* LOADING */
+
+.preloader{
+	min-height: 100vh;
+	width:100%;
+	background: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position:fixed;
+	z-index: 999;
+	animation:load-anim 2s linear infinite;
+}
+@keyframes load-anim{
+    0%{
+    	filter: hue-rotate(0);
+    }
+     0%{
+    	filter: hue-rotate(360deg);
+    }
+}
+.circle{
+	text-align: center;
+	margin: auto;
+}
+.load{
+	position: relative;	
+	display: flex;
+}
+.loadimg{
+	position: relative;
+	width:80px;
+	height:80px;
+	animation: loadimg 5s linear infinite;
+}
+@keyframes loadimg{
+	0%{
+		transform: translate(-20px, -10px);
+	}
+	50%{
+		transform:translate(40px, 50px);
+	}
+    75%{
+		transform:translate(70px, 50px);
+	}
+	100%{
+		transform:translate(90px, -30px);
+	}
+
+}
+.load .dot{
+	position: relative;
+	display: block;
+	width:10px;
+	height:10px;
+	background: #2cef2c;
+	box-shadow: 0 0 10px #2cef2c,
+	            0 0 10px #2cef2c,
+	            0 0 10px #2cef2c,
+	            0 0 10px #2cef2c,
+	            0 0 10px #2cef2c;
+	           
+	margin:20px 10px;
+	border-radius: 50%;
+	transform: scale(0.1);
+	animation: animated-dot 2s linear infinite;
+	animation-delay: calc(0.1s*var(--i));
+}
+@keyframes animated-dot{
+	0%{
+       transform: scale(0.1);
+	}
+	10%{
+       transform: scale(1);
+	}
+	50%, 100%{
+       transform: scale(0.1);
+	}
+}
+.preloader h6{
+	font-size: 22px;
+	font-family: var(--font2);
+	color:white;
+    text-transform: uppercase;
+} 
+
+/*BACKDROP*/
+
+.backdrop{
+    position: fixed;
+	top:0;
+	left:0;
+    right: 0;
+    bottom: 0;
+	background: rgba(83, 81, 81, 0.968);
+	z-index:10;
+	width: 100%;
+    height: 100vh;
+    display: none;
+}
+.backshow{
+    display: block;
+}
+
+/* BACK TO TOP */
+
+.back-to-top{
+	width:50px;
+	height:50px;
+	background:#d58d09;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	bottom: 100%;
+	right:30px;
+	z-index: 1000;
+	visibility: hidden;
+	transition: 0.3s ease-in-out;
+}
+.back-to-top:hover{
+	background:yellow;
+}
+.back-to-top:hover i{
+	color:black;
+}
+.back-to-top i{
+	color:white;
+	padding: 10px;
+	font-size: 25px;
+}
+.back-to-top.add{
+	visibility: visible;
+	bottom: 30px;
+}
+
+/*LOG IN FORM IN HEADER VISIBLE IN BIG SCREEN*/
+
+header.fixed .loginform_head h6{
+    color: #fff !important;
+    font-family: var(--font3);
+}
+.loginform_head{
+    position: absolute;
+    right: 80px;
+    top: 40px;
+    display: none;
+    transition: all 0.5s ease-in-out;
+} 
+.loginform_head h6{
+    color: #071de4;
+    font-size: 14px;
+    font-family: var(--font1);
+    text-transform: uppercase;
+}
+.loginform_head_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.loginform_head_flex span i{
+    color: white;
+    font-size: 26px;
+}
+.loginformhead {
+    background-color: rgb(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    right: 0px;
+    top: 35px;
+    z-index: 10;
+    width:300px;
+    display: none;
+}
+
+.showformhead{
+    display: block;
+}
+.loginformhead h5 {
+    color: #fff;
+    font-size: 16px;
+    font-family: var(--font1);
+    text-transform: uppercase;
+}
+.loginformhead form {
+    padding: 10px 10px 15px 10px;
+}
+.loginformhead form input {
+    margin-top: 15px;
+    padding: 10px 20px;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.loginformhead form input:hover {
+    background-color: rgb(241, 236, 236);
+}
+
+.loginformhead form input:focus {
+    border: none;
+    outline: none;
+}
+
+.loginformhead form input::placeholder {
+    font-size: 11px;
+    color: gray;
+    text-transform: uppercase;
+}
+
+.username_head,
+.email_head,
+.password_head {
+    position: relative;
+}
+
+.loginformhead form label i {
+    position: absolute;
+    top: 27px;
+    right: 20px;
+    color: rgb(209, 206, 206);
+    transition: 0.3s ease-in-out;
+}
+
+.loginformhead form label i:hover {
+    color: rgb(136, 134, 134);
+}
+
+.loginformhead form h5 a,
+.loginformhead form h6 {
+    color: #fff;
+    font-size: 12px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    transition: 0.3s ease-in-out;
+}
+
+.loginformhead form h5 a:hover {
+    color: rgb(249, 246, 33);
+}
+
+.loginformhead form button {
+    width: 100%;
+    background-color: rgb(15, 15, 200);
+    color: white;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    font-family: var(--font3);
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.loginformhead form button:hover {
+    background-color: rgb(51, 51, 247);
+}
+
+.loginformhead form h6 {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.loginformhead form h6 a {
+    color: yellow;
+    transition: 0.3s ease-in-out;
+}
+
+.loginformhead form h6 a:hover {
+    cursor: pointer;
+}
+
+.social_login_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.social_login_head h6:nth-child(1) {
+    background-color: rgb(51, 51, 247);
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.social_login_head h6:nth-child(1):hover {
+    background-color: rgb(96, 96, 254);
+}
+
+.social_login_head h6:nth-child(2) {
+    background-color: rgb(246, 45, 189);
+    padding: 10px 20px;
+    text-transform: capitalize;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.social_login_head h6:nth-child(2):hover {
+    background-color: rgb(252, 89, 206);
+}
+
+.social_login_head h6 a {
+    color: #fff !important;
+}
+
+/*LOG IN/ SIGN UP FORM VISIBLE IN RESPONSIVE SMALL SCREEN*/
+
+.loginform_header_bottom{
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background-color: rgb(0, 0, 0, 0.8);
+    display: none;
+}
+.loginform_header_bottom h6{
+    color: #f8f81e;
+    font-size: 14px;
+    font-family: var(--font3);
+    text-transform: uppercase;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+}
+.loginform_bottom_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.loginform_bottom_flex span i{
+    color: white;
+    font-size: 26px;
+}
+.loginformbottom {
+    background-color: rgb(0, 0, 0, 1.0);
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+    z-index: 10;
+    width:270px;
+    display:none ;
+}
+
+.showformbottom{
+    display: block;
+}
+.loginformbottom h5 {
+    color: #fff;
+    font-size: 16px;
+    font-family: var(--font1);
+    text-transform: uppercase;
+}
+.loginformbottom form {
+    padding: 10px 10px 15px 10px;
+}
+.loginformbottom form input {
+    margin-top: 15px;
+    padding: 10px 20px;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.loginformbottom form input:hover {
+    background-color: rgb(241, 236, 236);
+}
+
+.loginformhead form input:focus {
+    border: none;
+    outline: none;
+}
+
+.loginformbottom form input::placeholder {
+    font-size: 11px;
+    color: gray;
+    text-transform: uppercase;
+}
+.username_bottom,
+.email_bottom,
+.password_bottom {
+    position: relative;
+}
+
+.loginformbottom form label i {
+    position: absolute;
+    top: 27px;
+    right: 20px;
+    color: rgb(209, 206, 206);
+    transition: 0.3s ease-in-out;
+}
+
+.loginformbottom form label i:hover {
+    color: rgb(136, 134, 134);
+}
+
+.loginformbottom form h5 a,
+.loginformbottom form h6 {
+    color: #fff;
+    font-size: 12px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    transition: 0.3s ease-in-out;
+}
+
+.loginformbottom form h5 a:hover {
+    color: rgb(249, 246, 33);
+}
+
+.loginformbottom form button {
+    width: 100%;
+    background-color: rgb(15, 15, 200);
+    color: white;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    font-family: var(--font3);
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.loginformbottom form button:hover {
+    background-color: rgb(51, 51, 247);
+}
+
+.loginformbottom form h6 {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.loginformbottom form h6 a {
+    color: yellow;
+    transition: 0.3s ease-in-out;
+}
+
+.loginformbottom form h6 a:hover {
+    cursor: pointer;
+}
+
+.social_login_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.social_login_bottom h6:nth-child(1) {
+    background-color: rgb(51, 51, 247);
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.social_login_bottom h6:nth-child(1):hover {
+    background-color: rgb(96, 96, 254);
+}
+
+.social_login_bottom h6:nth-child(2) {
+    background-color: rgb(246, 45, 189);
+    padding: 10px 20px;
+    text-transform: capitalize;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.social_login_bottom h6:nth-child(2):hover {
+    background-color: rgb(252, 89, 206);
+}
+
+.social_login_bottom h6 a {
+    color: #fff !important;
+}
+
+
+/*HAMBURGER*/
+
+.ham{
+    width:35px;
+    height:35px;
+    position: fixed;
+    right: 12px;
+    top: 32px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 500;
+    visibility: hidden;
+}
+header.fixed .hamspan{
+    background:#f6fa05;
+}
+.ham .hamspan{
+    height:3px;
+    background:#000;
+    position: absolute;
+    width:65%;
+}
+.ham .hamspan:nth-child(1){
+	transform: translateY(-8px);
+}
+.ham .hamspan:nth-child(3){
+	transform: translateY(8px);
+}
+.ham.hamactive .hamspan:nth-child(2){
+	display:none;
+}
+.ham.hamactive .hamspan:nth-child(1){
+	transform: rotate(45deg);
+	transition: 0.5s ease-in-out;
+    background-color: #fff;
+}
+.ham.hamactive .hamspan:nth-child(3){
+	transform: rotate(-45deg);
+	transition: 0.5s ease-in-out;  
+    background-color: #fff;
+}
+.ham.hamactive{
+    border-radius: 100%;
+    background: #000;
+    padding: 10px;
+    top: 17px;
+}
+
+
+/*HAMBURGUR MENU SIDEBAR*/
+
+.menusidebar{
+	position:fixed;
+	width:0px;
+	background: white;
+	height:100vh;
+	z-index: 100;
+	top:0;
+	right:0;
+	background: #d8dce1;
+	overflow: auto;
+    transform: scale(0);
+    transition: 0.5s ease-in-out;
+}
+.menusidebar.hamactive{
+	width:300px;
+    transform: scale(1.0);
+}
+.hamlogoimg{
+	width:200px;
+	height:100px;
+	margin: auto;
+	margin-top: 30px;
+}
+.hamlogoimg img{
+	width:100%;
+	height:100%;
+}
+.ham-menu{
+    position: absolute;
+    top:150px;
+    left:0;
+    text-transform: capitalize;
+    font-weight: 700;
+    color:white;
+    font-family: var(--font2);
+    text-align: left;
+    width:100%;
+}
+.ham-menu .hamul li{
+    display: block;
+    padding: 8px 10px 8px 30px;
+    transform: background 0.3s ease-in-out;
+    margin-bottom: 40px;
+    transform: 0.5s ease-in-out;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 0;
+    font-family: var(--font1);
+    font-weight: 600;
+}
+.ham-menu .hamul li:hover{
+    background-color: rgb(254, 250, 8);
+}
+.ham-menu .hamul li a{
+    color:rgb(94, 93, 93);
+    transform: 0.3s ease-in-out;
+}
+.ham-menu .hamul li:hover a{
+    color: rgb(226, 13, 233);
+    letter-spacing: 0px !important;
+    padding-left: 15px;
+}
+.activeli{
+    background-color:rgb(254, 250, 8);
+}
+.activeli a{
+    color: rgb(226, 13, 233) !important;
+}
+
+
+/*HEADER*/
+
+.fixed{
+	position: fixed;
+	z-index: 100;
+    background-color: rgb(0 0 0 / 54%);
+    width: 100%;
+    height: 90px;
+}
+header.fixed #mainli li a{
+    color: #fff;
+}
+header.fixed #mainli li a:hover{
+    color: aqua !important;
+}
+header.fixed .mainli_active > a{
+    color: aqua !important;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    padding: 10px 0 5px 0;
+}
+
+.header #mainli li {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 22px;
+    text-transform: uppercase;
+    font-family: var(--font1);
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.5s ease-in-out;
+    position: relative;
+}
+
+.header #mainli li a {
+    color: rgb(92, 6, 173);
+    transition: 0.3s ease-in-out;
+}
+
+.header #mainli li:hover a {
+   color: rgb(133, 245, 251);
+}
+.mainli_active a{
+    color: rgb(133, 245, 251) !important;
+}
+.logo {
+    width: 25%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo img {
+    width: 200px;
+    height: 80px;
+    padding-left: 10px;
+}
+
+.header nav {
+    width: 75%;
+    text-align: right;
+}
+
+/*SUB MENU CREATION*/
+
+
+.destination_subdiv{
+    width: auto;
+    background: rgb(245, 243, 243);
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: 10;
+    text-align: left;
+    padding: 0 10px 0 5px;
+    visibility: hidden;
+    transition: 0.3 ease-in-out;
+    opacity: 0;
+    border-radius: 7px;
+}
+.tour_subdiv{
+    width: auto;
+    background: rgb(245, 243, 243);
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: 10;
+    text-align: left;
+    padding: 0 10px 0 5px;
+    visibility: hidden;
+    transition: 0.3 ease-in;
+    opacity: 0;
+    border-radius: 7px;
+}
+.header #mainli li:hover .destination_subdiv, .header #mainli li:hover .tour_subdiv{
+   visibility: visible !important;
+   opacity: 1;
+}
+.dest_subul li, .tour_subul li{
+    display: block;
+    width: 100%;
+   margin-top: 10px;
+    text-align: left;
+   padding: 7px 10px 7px 10px ;
+   transition: 0.3 ease-in;
+}
+
+.dest_subul li a, .tour_subul li a{
+    color: #625d5d !important;
+    font-size: 14px;
+    font-family: var(--font3);
+    transition: 0.3s ease-in-out;
+    text-transform: capitalize !important;
+}
+.dest_subul li:hover a, .tour_subul li:hover a{
+   letter-spacing: 0 !important;
+}
+.dest_subul li a:hover, .tour_subul li a:hover{
+   color: rgb(164, 9, 9) !important;
+   padding-left: 5px !important;
+}
+
+/*BANNER_1*/
+
+.b1slide1,
+.b1slide2,
+.b1slide3,
+.b1slide4 {
+    background: url("image/dubai1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    position: relative;
+}
+
+.b1slide1::before,
+.b1slide2::before,
+.b1slide3::before,
+.b1slide4::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 800px;
+    top: 0;
+    left: 0;
+    background-color: black;
+    mix-blend-mode: multiply;
+    opacity: 0.3;
+}
+
+.b1slide2 {
+    background: url("image/img2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.b1slide3 {
+    background: url("image/img3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.b1slide4 {
+    background: url("image/img1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.b1slidetext1,
+.b1slidetext2,
+.b1slidetext3,
+.b1slidetext4 {
+    width: 90%;
+    text-align: center;
+    position: relative;
+    z-index: 5 !important;
+}
+
+.b1slidetext1 h1,
+.b1slidetext2 h1,
+.b1slidetext3 h1,
+.b1slidetext4 h1 {
+    font-family: var(--font2);
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 800;
+    color: hsl(65, 96%, 57%);
+}
+
+
+.b1slidetext1 p,
+.b1slidetext2 p,
+.b1slidetext3 p,
+.b1slidetext4 p {
+    width: 100%;
+    align-self: center;
+    color: antiquewhite;
+    font-family: var(--font3);
+    font-size: 22px;
+    font-weight: 400;
+    padding-top: 30px;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    color: chartreuse;
+    background-color: rgb(183, 10, 246);
+    font-size: 20px !important;
+    padding: 10px 15px;
+    font-weight: 600;
+}
+
+/*BANNER_2*/
+
+.banner_2 {
+    padding: 50px 0;
+}
+
+.b2content {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.b2content h1 {
+    text-transform: uppercase;
+    font-family: var(--font2);
+    font-size: 50px;
+    color: rgb(65, 74, 236);
+    letter-spacing: 1px;
+    font-weight: bolder;
+}
+
+.b2content h1 span {
+    color: rgb(132, 236, 21);
+}
+
+.b2content p {
+    padding-top: 15px;
+    text-transform: capitalize;
+    font-family: var(--font3);
+    font-size: 20px;
+    color: #9d9d9d;
+    letter-spacing: 1px;
+    font-weight: bolder;
+}
+
+.b2gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.b2gallery .b2images {
+    columns: 3 350px;
+    gap: 20px;
+    max-width: 95%;
+    margin-top: 40px;
+}
+
+.b2card img {
+    width: 100%;
+}
+
+.b2card {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.b2card::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: rgb(19, 5, 5);
+    opacity: 0.4;
+    mix-blend-mode: multiply;
+    transition: 0.3s ease-in-out;
+}
+
+.b2card:hover::before {
+    height: 100%;
+}
+
+.b2card span {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    font-family: var(--font1);
+    color: white;
+    background-color: rgb(249, 50, 140);
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.b2card .b2carddetails {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 60%);
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.b2card:hover .b2carddetails {
+    transform: translate(-50%, -10%);
+}
+
+.b2carddetails p,
+.b2carddetails h6,
+.b2carddetails h5 {
+    padding-top: 20px;
+    text-transform: capitalize;
+    font-family: var(--font3);
+    font-size: 16px;
+    color: beige;
+    letter-spacing: 1px;
+}
+
+.b2carddetails h6 {
+    font-size: 14px;
+    color: rgb(185, 246, 15);
+}
+
+.b2carddetails h6:hover {
+    color: #fd31d4;
+    transition: 0.3s ease-in-out;
+}
+
+.b2carddetails h5 {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: rgb(249, 237, 11);
+}
+
+/*BANNER_3*/
+
+.banner_3 {
+    padding: 50px 0 80px 0;
+
+}
+
+.b3content {
+    text-align: center;
+    position: relative;
+    z-index: 5;
+}
+
+.b3content h4 {
+    text-transform: uppercase;
+    font-family: var(--font2);
+    font-size: 50px;
+    color: rgb(65, 74, 236);
+    letter-spacing: 1px;
+    font-weight: bolder;
+}
+
+.b3content h6 {
+    text-transform: capitalize;
+    font-family: var(--font1);
+    font-size: 20px;
+    color: rgba(38, 38, 39, 0.79);
+    letter-spacing: 1px;
+    font-weight: bolder;
+    padding-bottom: 20px;
+}
+
+.b3content h4 span {
+    color: rgb(132, 236, 21);
+}
+
+.b3content p {
+    padding-top: 15px;
+    text-transform: capitalize;
+    font-family: var(--font3);
+    font-size: 20px;
+    color: #9d9d9d;
+    letter-spacing: 1px;
+    font-weight: bolder;
+}
+
+.searchform {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 80px;
+    padding: 50px;
+    background-color: rgb(250, 243, 234);
+    box-shadow: 0 0 20px rgb(221, 222, 219);
+    border-radius: 5px;
+}
+
+.searchform select {
+    margin-top: 20px;
+    margin-left: 30px;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: transparent;
+    outline: none;
+    font-size: 18px;
+    color: rgb(3, 144, 144);
+    font-family: var(--font3);
+    letter-spacing: 1px;
+    transition: 0.3s ease-in-out;
+}
+
+.searchform:hover select {
+    color: blueviolet;
+    transform: scale(1.02);
+    letter-spacing: 1.5px;
+}
+
+.searchform select option {
+    font-size: 14px;
+    color: rgb(3, 144, 144);
+    font-family: var(--font3);
+}
+
+.searchform label {
+    font-size: 18px;
+    color: rgb(43, 115, 4);
+    font-family: var(--font1);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.searchform label i {
+    font-size: 30px;
+    color: rgb(166, 9, 9);
+}
+.travelsearch {
+    text-align: center;
+}
+.travelsearch button {
+    outline: none;
+    border: none;
+    font-size: 18px;
+    padding: 15px 50px;
+    color: #fff;
+    background-color: rgb(181, 217, 19);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-family: var(--font3);
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+.travelsearch button:hover {
+    background-color: rgb(204, 245, 24);
+    color: blue;
+}
+
+.destination, .travelsearch, .traveltype{
+    width: 30%;
+}
+/*BANNER_4*/
+
+.banner_4 {
+    padding: 80px 0;
+    position: relative;
+    background: url("image/globe.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 640px;
+}
+
+.banner_4::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 640px;
+    background-color: black;
+    opacity: 0.5;
+    mix-blend-mode: multiply;
+}
+
+.b4fstgrid,
+.b4secondgrid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.b4content,
+.b4text {
+    position: relative;
+    z-index: 5;
+}
+
+.b4text h4 {
+    text-transform: uppercase;
+    font-family: var(--font2);
+    font-size: 40px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.b4text h4 span {
+    color: rgb(248, 249, 246);
+}
+
+.b4card {
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+}
+
+.b4card h6 {
+    text-transform: capitalize;
+    font-family: var(--font1);
+    font-size: 18px;
+    color: rgb(147, 251, 35);
+    letter-spacing: 1px;
+    font-weight: bolder;
+    padding-bottom: 15px;
+}
+
+.b4card p {
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: rgb(250, 251, 252);
+    letter-spacing: 1px;
+    text-align: justify;
+    line-height: 20px;
+}
+
+/*BANNER_5*/
+
+.banner_5 {
+    padding: 80px 0 60px 0;
+}
+
+.b5card {
+    width: 90%;
+    height: 580px;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 0 0 10px gray;
+    padding: 30px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.b5card:hover {
+    background-color: #f2f2f2;
+}
+
+.b5card img {
+    width: 100%;
+    height: 280px;
+}
+
+.b5text {
+    text-align: center;
+    margin: auto;
+}
+
+.b5text h4 {
+    font-family: var(--font2);
+    font-size: 50px;
+    text-transform: uppercase;
+    color: rgb(65, 74, 236);
+}
+
+.b5text h4 span {
+    color: rgb(132, 236, 21);
+}
+
+.b5text p {
+    padding: 15px 0;
+    text-transform: capitalize;
+    font-family: var(--font3);
+    font-size: 20px;
+    color: #9d9d9d;
+    letter-spacing: 1px;
+    font-weight: bolder;
+}
+
+.b5head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    font-family: var(--font1);
+    font-size: 20px;
+    color: rgb(12, 12, 12);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.b5itemdetails span {
+    font-family: var(--font3);
+    font-size: 18px;
+    color: rgb(184, 6, 125);
+    text-transform: capitalize;
+}
+
+.b5itemdetails p {
+    font-family: var(--font3);
+    font-size: 16px;
+    color: rgb(144, 141, 143);
+    text-transform: capitalize;
+    padding-top: 20px;
+}
+
+.b5cardfoot {
+    background-color: rgb(30, 109, 246);
+    color: white;
+    padding: 15px 20px;
+    font-size: 30px;
+    font-family: var(--font3);
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots span {
+    margin-top: 20px !important;
+    background-color: rgb(4, 152, 103) !important;
+}
+
+.owl-dot:hover span {
+    background-color: rgb(171, 6, 151) !important;
+}
+
+.b5item {
+    padding: 50px 0;
+}
+
+.owl-theme .owl-nav {
+    display: none;
+}
+
+/*BANNER_6*/
+
+.banner_6 {
+    position: relative;
+    background: url("image/volcano3.jpg");
+    background-position:center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+}
+.banner_6::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height:600px;
+    width: 100%;
+    background-color: black;
+    mix-blend-mode: multiply;
+    opacity: 0.4;
+}
+.b6content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.loginform {
+    background-color: rgb(0, 0, 0, 0.5);
+    padding: 50px;
+    border-radius: 10px;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    width: 30%;
+}
+
+.loginform h5 {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-family: var(--font1);
+    text-transform: uppercase;
+}
+
+.banner_6 form {
+    padding: 25px 10px 15px 10px;
+}
+
+.banner_6 form input {
+    margin-top: 15px;
+    padding: 10px 20px;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.banner_6 form input:hover {
+    background-color: rgb(241, 236, 236);
+}
+
+.banner_6 form input:focus {
+    border: none;
+    outline: none;
+}
+
+.banner_6 form input::placeholder {
+    font-size: 11px;
+    color: gray;
+    text-transform: uppercase;
+}
+
+.username,
+.email,
+.password {
+    position: relative;
+}
+
+.banner_6 form label i {
+    position: absolute;
+    top: 27px;
+    right: 20px;
+    color: rgb(209, 206, 206);
+    transition: 0.3s ease-in-out;
+}
+
+.banner_6 form label i:hover {
+    color: rgb(136, 134, 134);
+}
+
+.banner_6 form h5 a,
+.banner_6 form h6 {
+    color: #fff;
+    font-size: 12px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    transition: 0.3s ease-in-out;
+}
+
+.banner_6 form h5 a:hover {
+    color: rgb(249, 246, 33);
+}
+
+.banner_6 form button {
+    width: 100%;
+    background-color: rgb(15, 15, 200);
+    color: white;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    font-family: var(--font3);
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.banner_6 form button:hover {
+    background-color: rgb(51, 51, 247);
+}
+
+.banner_6 form h6 {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.banner_6 form h6 a {
+    color: yellow;
+    transition: 0.3s ease-in-out;
+}
+
+.banner_6 form h6 a:hover {
+    cursor: pointer;
+}
+
+.social_login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px auto;
+    width: 275px;
+}
+
+.social_login h6:nth-child(1) {
+    background-color: rgb(51, 51, 247);
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.social_login h6:nth-child(1):hover {
+    background-color: rgb(96, 96, 254);
+}
+
+.social_login h6:nth-child(2) {
+    background-color: rgb(246, 45, 189);
+    padding: 10px 20px;
+    text-transform: capitalize;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.social_login h6:nth-child(2):hover {
+    background-color: rgb(252, 89, 206);
+}
+
+.social_login h6 a {
+    color: #fff !important;
+}
+
+.map {
+    width: 60%;
+    height: 500px;
+    position: relative;
+    z-index: 5;
+}
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
+.map h6{
+    text-align: center;
+    font-size: 30px;
+    font-family: var(--font2);
+    text-transform: uppercase;
+    padding: 20px 0;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.map h6 span{
+    color: rgb(132, 236, 21);
+}
+
+/*BANNER_7*/
+
+
+.banner_7{
+    padding: 80px 0;
+}
+.b7text {
+    text-align: center;
+    margin: auto;
+}
+
+.b7text h4 {
+    font-family: var(--font2);
+    font-size: 50px;
+    text-transform: uppercase;
+    color: rgb(65, 74, 236);
+}
+
+.b7text h4 span {
+    color: rgb(132, 236, 21);
+}
+
+.b7text p {
+    padding: 15px 0;
+    text-transform: capitalize;
+    font-family: var(--font3);
+    font-size: 20px;
+    color: #9d9d9d;
+    letter-spacing: 1px;
+    font-weight: bolder;
+}
+.b7cardimg{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    border: 7px solid #fff;
+    box-shadow: 0 0 10px gray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -195%);
+}
+.b7cardimg img{
+    width:100%;
+    height: 100%;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.b7card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 23px 4px #8080802b;
+    padding: 50px;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    position: relative;
+   border-radius: 10px;
+   background-color: rgb(255, 251, 247);
+}
+.b7item{
+    padding: 50px 0;
+}
+.b7cardcontent{
+    text-align: center;
+}
+.b7cardcontent p{
+    padding-top: 30px;
+    font-size: 14px;
+    font-family: var(--font3);
+    color: gray;
+    text-transform: capitalize;
+}
+.b7cardcontent h6{
+    padding-top: 30px;
+    font-size: 16px;
+    font-family: var(--font1);
+    color: rgb(71, 17, 246);
+    text-transform: uppercase;
+}
+.b7cardcontent .profession{
+    padding-top: 10px;
+    font-size: 14px;
+    font-family: var(--font3);
+    color: rgb(19, 1, 14);
+    text-transform: uppercase;
+}
+
+/*BANNER_8*/
+
+.banner_8{
+    padding-bottom:80px;
+}
+.b8head{
+    text-align: center;
+}
+.b8head h6 {
+    font-family: var(--font2);
+    font-size: 50px;
+    text-transform: uppercase;
+    color: rgb(65, 74, 236);
+}
+
+.b8head h6 span {
+    color: rgb(132, 236, 21);
+}
+
+.b8head p {
+    padding: 15px 0;
+    text-transform: capitalize;
+    font-family: var(--font3);
+    font-size: 20px;
+    color: #9d9d9d;
+    letter-spacing: 1px;
+    font-weight: bolder;
+}
+.b8slide .blogimg img{
+    width: 100%;
+    height: 200px;
+}
+.blogcontent{
+    padding: 10px 20px;
+}
+.blogcontent h6{
+    font-family: var(--font1);
+    font-size: 16px;
+    text-transform: uppercase;
+    color: rgb(29, 6, 183);
+    padding-top: 20px;
+}
+.blogcontent p{
+    font-family: sans-serif;
+    font-size: 13px;
+    text-transform: capitalize;
+    color: rgb(130, 130, 131);
+    padding-top: 20px;
+    text-align: justify;
+    line-height: 20px;
+}
+.blogcontent p a{
+    color:rgb(29, 6, 183);
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.blogcontent p a:hover{
+    color: rgb(217, 5, 5);
+}
+.b8slide{
+    margin-top: 20px;
+    margin-right: 20px !important;
+    box-shadow: 0 0 5px rgb(195, 194, 194);
+}
+.b8wrap{
+    padding: 20px;
+}
+.bloggerdetails, .bloggerphoto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bloggerdetails{
+    padding: 0 15px 15px 15px;
+}
+.bloggerphoto img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 2px solid gray;
+}
+.bloggerphoto h5{
+    margin-left: 10px;
+    text-transform: capitalize;
+    font-size: 12px;
+    font-family:verdana;
+    color: rgb(86, 5, 162);
+}
+.bloggerdetails h6{
+    text-transform: capitalize;
+    font-size: 11px;
+    font-family:verdana;
+    color: rgb(86, 5, 162);
+}
+
+
+/*FOOTER*/
+
+
+footer{
+    padding: 80px 0 20px 0;
+    background-color:#303030;
+}
+.footercontent{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    color: #fff;
+}
+.footcontent2, .footcontent3{
+    width: 20%;
+    margin-right: 20px;
+}
+.footcontent1, .footcontent4{
+    width: 25%;
+    margin-right: 30px;
+}
+.footlogo{
+    width: 150px;
+    height: 60px;
+}
+.footlogo img{
+    width: 100%;
+    height: 100%;
+}
+.footcontent1 p{
+    font-family:sans-serif;
+    font-size: 16px;
+    text-transform: capitalize;
+    text-align: justify;
+    width: 80%;
+    line-height: 20px;
+}
+.footcontent3 h6{
+    font-family: var(--font2);
+    text-transform: uppercase;
+    font-size: 16px;
+    padding-bottom: 8px;
+    color: yellow;
+}
+.footcontent3 h6 i{
+    color: yellow;
+}
+.footcontent3 p{
+    font-family:sans-serif;
+    font-size: 16px;
+    padding-bottom: 25px;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+.footcontent3 p:hover{
+    color: aqua;
+}
+.footcontent2 h6{
+    font-family: var(--font2);
+    text-transform: uppercase;
+    font-size: 16px;
+    padding-bottom: 8px;
+    color: yellow;
+}
+.footcontent2 ul li{
+    margin-top: 10px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.footcontent2 ul li a{
+    color: white;
+    font-family: sans-serif;
+}
+.footcontent2 ul li:hover a{
+    color: aqua;
+}
+.footcontent4 h6{
+    font-family: var(--font2);
+    text-transform: uppercase;
+    font-size: 16px;
+    padding-bottom: 8px;
+    color: yellow;
+}
+.footcontent4 p{
+    font-family:sans-serif;
+    font-size: 16px;
+    padding-bottom: 25px;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+.footcontent4 ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.footcontent4 ul li{
+    width: 80px;
+    height: 50px;
+}
+.footcontent4 ul li a img{
+    width: 100%;
+    height: 100%;
+}
+/*SOCIAL ICON*/
+
+.social_icon{
+    width: 100%;
+    color: #fff;   
+}
+.social_icon ul li{
+    display: inline-block;
+    justify-content: space-between;
+   
+}
+.social_icon ul li:hover a{
+    color: aqua;
+}
+.social_icon ul li a{
+    color: #fff;
+    margin-right: 10px;
+    transition: 0.3s ease-in-out;
+}
+.social_icon h6{
+    font-family: var(--font2);
+    text-transform: uppercase;
+    font-size: 12px;
+    padding-bottom: 8px;
+    color: yellow;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+/*COPYRIGHT*/
+
+.copyright{
+    background-color:#303030;
+    border-top: 1px solid rgb(204, 203, 203);
+}
+.copyright_content{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+    color: white;
+    font-family: sans-serif;
+    font-size: 22px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+   
+}
+.copyright h6{
+    padding: 20px 0;  
+}
+
+
+/*DESTINATION DETAILS*/
+
+.mainbodypart{
+    display: flex;
+    justify-content: space-between;
+}
+.tour_details{
+    width:65%;
+}
+.tourcompany_gallery{
+    width: 35%;
+    padding-left: 30px;
+    text-align: center;
+}
+.tourcompany_gallery h6{
+    text-transform: capitalize;
+    font-family: var(--font2);
+    color: #2fd905da;
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.tourcompany_gallery h6 span{
+    color: rgb(239, 14, 194);
+}
+.rating_star{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+}
+.europe, .india{
+    padding: 50px 0;
+    background-color:#e1e1e1;
+}
+.switzerland_card, .sweden_card, .italy_card, .greece_card, .delhi_card, .lakshadweep_card, .jaipur_card, .rajasthan_card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    border: 1px solid rgb(190, 186, 186);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #efeaeafa;
+}
+.switzerland_card, .delhi_card{
+    margin-top: 0 !important;
+}
+.swiscard_img, .swedencard_img, .italycard_img, .greececard_img, .delhicard_img, .lakshadweepcard_img, .jaipurcard_img, .rajasthancard_img{
+    width: 450px;
+    height: 300px;
+}
+.swiscard_img img, .swedencard_img img, .italycard_img img, .greececard_img img, .delhicard_img img, .lakshadweepcard_img img, .jaipurcard_img img, .rajasthancard_img img{
+    width: 100%;
+    height: 100%;
+}
+.swiscard_details h5, .swedencard_details h5, .italycard_details h5, .greececard_details h5, .rajasthancard_details h5, .jaipurcard_details h5, .lakshadweepcard_details h5, .delhicard_details h5{
+    font-family: var(--font1);
+    color: #071de4;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    letter-spacing: 1px;
+}
+.rating_star i{
+    font-size: 15px;
+    color: #f09f0a;
+}
+.rating_star{
+    font-family: var(--font3);
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+.swiscard_details, .swedencard_details, .italycard_details, .greececard_details, .rajasthancard_details, .jaipurcard_details, .lakshadweepcard_details, .delhicard_details{
+    padding: 0 30px 0 10px;
+}
+.swiscard_details p, .swedencard_details p, .italycard_details p, .greececard_details p, .rajasthancard_details p, .jaipurcard_details p, .lakshadweepcard_details p, .delhicard_details p{
+    font-size: 18px;
+    font-family: var(--font3);
+    color: #909193;
+    padding-bottom: 20px;
+}
+.swiscard_details p i, .swedencard_details p i, .italycard_details p i, .greececard_details p i, .rajasthancard_details p i, .jaipurcard_details p i, .lakshadweepcard_details p i, .delhicard_details p i{
+    font-size: 20px;
+    color: #2691fb;
+}
+.swiscard_details h6, .swedencard_details h6, .italycard_details h6, .greececard_details h6, .rajasthancard_details h6, .jaipurcard_details h6, .lakshadweepcard_details h6, .delhicard_details h6{
+    font-size: 20px;
+    font-family: var(--font3);
+    color: #0c0f15;
+    text-transform: capitalize;
+}
+.swiscard_details h6 span, .swedencard_details h6 span, .italycard_details h6 span, .greececard_details h6 span, .rajasthancard_details h6 span, .jaipurcard_details h6 span, .lakshadweepcard_details h6 span, .delhicard_details h6 span{
+    font-size: 22px;
+    font-family: var(--font3);
+    color: #e26804;
+    text-transform: capitalize;
+}
+.europetour, .indiatour {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.europetour .europetour_ul, .indiatour, .indiatour_ul {
+    columns: 2 150px;
+    gap: 5px;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+.europetour_ul li img, .indiatour_ul li img{
+    width: 100%;
+    height: 200px;
+}
+.europetour .europetour_ul li, .indiatour .indiatour_ul li{
+    overflow: hidden;
+    margin-top: 10px;
+    position: relative;
+}
+.europetour .europetour_ul li::before, .indiatour .indiatour_ul li::before{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: rgb(19, 5, 5);
+    opacity: 0.4;
+    mix-blend-mode: multiply;
+    transition: 0.3s ease-in-out;
+}
+.europetour .europetour_ul li:hover::before, .indiatour .indiatour_ul li:hover::before{
+    height: 100%;
+}
+.europetour .europetour_ul li h5, .indiatour .indiatour_ul li h5{
+    font-family: var(--font3);
+    font-size: 14px;
+    text-transform: capitalize;
+    color: white;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -500%);
+    transition: 0.3s ease-in-out;
+}
+.europetour .europetour_ul li h5:hover, .indiatour .indiatour_ul li h5:hover{
+    color:rgb(250, 250, 34);
+}
+.europetour .europetour_ul li:hover h5, .indiatour .indiatour_ul li:hover h5{
+    transform: translate(-50%, -50%);
+}
+
+
+/*SIGN UP FORM*/
+
+.signupsection{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url("image/sea2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signupsection::before{
+   position: absolute;
+   content:"";
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background-color: black;
+   opacity: 0.4;
+   mix-blend-mode: multiply;
+}
+.signupform{
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+    background-color: rgb(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 10;
+    width:270px;
+    display: block;
+} 
+.signupform h6{
+    color: #071de4;
+    font-size: 14px;
+    font-family: var(--font1);
+    text-transform: uppercase;
+}
+.signupform_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.signupform_flex span i{
+    color: white;
+    font-size: 26px;
+    transition: 0.3s ease-in-out;
+}
+.signupform_flex span i:hover{
+    color: yellow;
+}
+.showsignup{
+    display: block;
+}
+.signupform h5 {
+    color: #fff;
+    font-size: 16px;
+    font-family: var(--font1);
+    text-transform: uppercase;
+}
+.signupform form {
+    padding: 10px 10px 15px 10px;
+}
+.signupform form input {
+    margin-top: 15px;
+    padding: 10px 20px;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.signupform form input:hover {
+    background-color: rgb(241, 236, 236);
+}
+
+.signupform form input:focus {
+    border: none;
+    outline: none;
+}
+
+.signupform form input::placeholder {
+    font-size: 11px;
+    color: gray;
+    text-transform: uppercase;
+}
+
+.signup_username,
+.signup_email,
+.signup_password, .signup_confirm_password {
+    position: relative;
+}
+
+.signupform form label i {
+    position: absolute;
+    top: 27px;
+    right: 20px;
+    color: rgb(209, 206, 206);
+    transition: 0.3s ease-in-out;
+}
+
+.signupform form label i:hover {
+    color: rgb(136, 134, 134);
+}
+
+.signupform form h6 {
+    color: #fff;
+    font-size: 12px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    transition: 0.3s ease-in-out;
+}
+
+.signupform form button {
+    width: 100%;
+    background-color: rgb(15, 15, 200);
+    color: white;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    font-family: var(--font3);
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.signupform form button:hover {
+    background-color: rgb(51, 51, 247);
+}
+
+.signupform form h6 {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.signupform form h6 a {
+    color: yellow;
+    transition: 0.3s ease-in-out;
+}
+
+.signupform form h6 a:hover {
+    cursor: pointer;
+}
+
+
+
+/*LOG IN FORM HTML*/
+
+#login_htmlsection{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url("image/honolulu.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#login_htmlsection::before{
+    position: absolute;
+    content:"";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.4;
+    mix-blend-mode: multiply;
+ }
+.loginform_html{
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+    background-color: rgb(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 10;
+    width:270px;
+    display: block;
+} 
+.loginform_html h6{
+    color: #071de4;
+    font-size: 14px;
+    font-family: var(--font1);
+    text-transform: uppercase;
+}
+.loginform_html_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.loginform_html_flex span i{
+    color: white;
+    font-size: 26px;
+    transition: 0.3s ease-in-out;
+}
+.loginform_html_flex span i:hover{
+    color: yellow;
+}
+.showloginformhtml{
+    display: block;
+}
+.loginform_html h5 {
+    color: #fff;
+    font-size: 16px;
+    font-family: var(--font1);
+    text-transform: uppercase;
+}
+.loginform_html form {
+    padding: 10px 10px 15px 10px;
+}
+.loginform_html form input {
+    margin-top: 15px;
+    padding: 10px 20px;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.loginform_html form input:hover {
+    background-color: rgb(241, 236, 236);
+}
+
+.loginform_html form input:focus {
+    border: none;
+    outline: none;
+}
+
+.loginform_html form input::placeholder {
+    font-size: 11px;
+    color: gray;
+    text-transform: uppercase;
+}
+
+.username_html,
+.email_html,
+.password_html {
+    position: relative;
+}
+
+.loginform_html form label i {
+    position: absolute;
+    top: 27px;
+    right: 20px;
+    color: rgb(209, 206, 206);
+    transition: 0.3s ease-in-out;
+}
+
+.loginform_html form label i:hover {
+    color: rgb(136, 134, 134);
+}
+
+.loginform_html form h5 a,
+.loginform_html form h6 {
+    color: #fff;
+    font-size: 12px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    transition: 0.3s ease-in-out;
+}
+
+.loginform_html form h5 a:hover {
+    color: rgb(249, 246, 33);
+}
+
+.loginform_html form button {
+    width: 100%;
+    background-color: rgb(15, 15, 200);
+    color: white;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    font-family: var(--font3);
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.loginform_html form button:hover {
+    background-color: rgb(51, 51, 247);
+}
+
+.loginform_html form h6 {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.loginform_html form h6 a {
+    color: yellow;
+    transition: 0.3s ease-in-out;
+}
+
+.loginform_html form h6 a:hover {
+    cursor: pointer;
+}
+
+.social_login_html {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.social_login_html h6:nth-child(1) {
+    background-color: rgb(51, 51, 247);
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.social_login_html h6:nth-child(1):hover {
+    background-color: rgb(96, 96, 254);
+}
+
+.social_login_html h6:nth-child(2) {
+    background-color: rgb(246, 45, 189);
+    padding: 10px 20px;
+    text-transform: capitalize;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.social_login_html h6:nth-child(2):hover {
+    background-color: rgb(252, 89, 206);
+}
+
+.social_login_html h6 a {
+    color: #fff !important;
+}
+
+
+
+/*FORM VALIDATION*/
+
+.name-error, .mail-error, .pass-error, .confirm-pass-error{
+    width:100%;
+    padding: 5px 0;
+    color:red;
+    font-family: var(--font3);
+    font-size: 14px;
+    text-transform: capitalize;
+  }
+  .submit-error{
+    display: block;
+    width:400px;
+    padding: 10px 0;
+    color:red;
+    font-family: var(--font3);
+    text-transform: uppercase;
+    font-size: 11px;
+  }

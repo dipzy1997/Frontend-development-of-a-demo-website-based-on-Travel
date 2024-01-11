@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in form - travel website by Dipanwita</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" href="responsive.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+   
+   
+<body>
+    
+<section id="login_htmlsection">
+    <div class="loginform_html">
+        <div class="loginform_html_flex">
+            <h5>log in now!</h5>
+           <span id="login_html_cross"> <a href="index.html"><i class="fa-regular fa-circle-xmark"></i></a></span>
+        </div>
+        <form  autocomplete="off">
+            <div class="username_html">
+            <input type="text" name="username" placeholder="username" id="user_html" onkeyup="validname()">
+            <label for="user_html"><i class="fa-solid fa-user"></i></label>
+            <div class="name-error"></div>
+            </div>
+          
+            <div class="email_html">
+                <input type="email" name="email" placeholder="email id" id="mail_html" onkeyup="validmail()">
+                <label for="mail_html"><i class="fa-solid fa-envelope"></i></label>
+                <div class="mail-error"></div>      
+            </div>
+            
+            <div class="password_html">
+                <input type="password" name="password" placeholder="password" id="pass_html" onkeyup="validpassword()">
+                <label for="pass_html" class="eyebutton"><i class="fa-solid fa-eye-slash" onclick="showhide()"></i></label>
+                <div class="pass-error"></div>      
+            </div>
+
+            <h5><a href="">forgot password?</a></h5>
+            <button type="submit" onclick="return check()">log in</button>
+            <div class="submit-error"></div>
+            <h6>or login with</h6>
+            <div class="social_login_html">
+                <h6><a href=><i class="fa-brands fa-facebook-f"></i>&nbsp;&nbsp; facebook</a></h6>
+                <h6><a href=""><i class="fa-brands fa-instagram"></i>&nbsp;&nbsp; instagram</a></h6>
+            </div>
+            <h6>don't have an account? <a href="signup.html#signupid">sign up now</a></h6>
+        </form>
+    </div>
+</section>
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
+
+
+<script>
+ 
+    let nameerror = document.querySelector(".name-error");
+    let passerror = document.querySelector(".pass-error");
+    let mailerror = document.querySelector(".mail-error");
+    let submiterror = document.querySelector(".submit-error");
+    let eyebutton = document.querySelector(".eyebutton");
+    let form = document.querySelector("form");
+
+     form.addEventListener("submit",function(){
+      form.preventDefault();
+    });
+    
+    function validname(){
+    let name = document.querySelector("#user_html").value;
+
+      if(name.length == 0){
+        nameerror.innerHTML = "Username is required";
+        nameerror.style.color = "red";
+        return false;
+      }
+      else{
+        nameerror.innerHTML = '<i class="fa-solid fa-circle-check"></i>' + " " + "valid";
+        nameerror.style.color = "green";
+        return true
+      }    
+  };
+
+  function validmail(){
+   let mail = document.querySelector("#mail_html").value;
+
+      if(mail.length == 0){
+        mailerror.innerHTML = "Email is required";
+        mailerror.style.color = "red";
+        return false;
+      }
+      
+      if(!mail.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/)){
+        mailerror.innerHTML = "invalid Email";
+        mailerror.style.color = "red";
+        return false;
+      }
+      else{
+        mailerror.innerHTML = '<i class="fa-solid fa-circle-check"></i>' + " " + "valid";
+        mailerror.style.color = "green";
+        return true
+      }    
+  };
+
+
+  function validpassword(){
+   let password = document.querySelector("#pass_html").value;
+
+      if(password.length == 0){
+        passerror.innerHTML = "Password is required";
+        passerror.style.color = "red";
+        return false;
+      }
+      
+      if(!password.match(/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/)){
+        passerror.innerHTML = "password should be minimum 8 charecter, atleast 1 letter and 1 number ";
+        passerror.style.color = "red";
+        return false;
+      }
+      else{
+        passerror.innerHTML = '<i class="fa-solid fa-circle-check"></i>' + " " + "valid";
+        passerror.style.color = "green";
+        return true
+      }    
+  };
+
+
+ /* function showhide(e){
+    let pass = document.querySelector("#pass_html");
+    var passtype = pass.getAttribute("type");
+
+    if(passtype == "password"){
+        pass.setAttribute("type" , "text");
+        e.classList.remove("fa-eye-slash");
+        e.classList.add("fa-eye");
+    }
+    else{
+        pass.setAttribute("type" , "password");
+        e.classList.add("fa-eye-slash");
+        e.classList.remove("fa-eye");
+    }
+  };*/
+
+
+  function check(){
+    if(!validname() || !validmail() || !validpassword()){
+      submiterror.style.display = "block";
+      submiterror.innerHTML = "Please fix the error";
+      setTimeout(() =>{
+        submiterror.style.display = "none";
+      },2000);
+      submiterror.style.color = "red";
+      return false;
+    }
+    else{
+      submiterror.innerHTML = '<i class="fa-solid fa-circle-check"></i>' + " " + "valid";
+      submiterror.style.color = "green";
+      return true;
+    }
+  };
+
+</script>
+</body>
+</html>

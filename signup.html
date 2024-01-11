@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up form - travel website by Dipanwita</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" href="responsive.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+    <link rel="stylesheet" href="path/to/dycalendar.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+   
+    <section class="signupsection" id="signupid">
+
+        <div class="signupform">
+            <div class="signupform_flex">
+                <h5>sign up now!</h5>
+               <span id="signupcross"> <a href="index.html"><i class="fa-regular fa-circle-xmark"></i></a></span>
+            </div>
+            
+            <form autocomplete="off">
+                <div class="signup_username">
+                <input type="text" name="username" placeholder="username" id="signup_user" onkeyup="validname()">
+                <label for="signup_user"><i class="fa-solid fa-user"></i></label>
+                <div class="name-error"></div>
+                </div>
+              
+                <div class="signup_email">
+                    <input type="email" name="email" placeholder="email id" id="signup_mail" onkeyup="validmail()">
+                    <label for="signup_mail"><i class="fa-solid fa-envelope"></i></label>
+                    <div class="mail-error"></div>   
+                </div>
+                
+                <div class="signup_password">
+                    <input type="password" name="password" placeholder="password" id="signup_pass" onkeyup="validpassword()">
+                    <label for="signup_pass" onclick="showhide()"><i class="fa-solid fa-eye-slash"></i></label>
+                    <div class="pass-error"></div>      
+                </div>
+
+                <div class="signup_confirm_password">
+                    <input type="password" name="password" placeholder="confirm password" id="signup_confirm_pass" onkeyup="confirmpasswordcheck(this)">
+                    <label for="signup_confirm_pass" onclick="confirmshowhide()"><i class="fa-solid fa-eye-slash"></i></label>
+                    <div class="confirm-pass-error"></div>      
+                </div>
+    
+              
+                <button type="submit" onclick="return check()">sign up</button>
+                <div class="submit-error"></div>
+               
+                
+                <h6>already have an account?<a href="index.html#b2destination"> log in</a></h6>
+            </form>
+        </div>
+
+    </section>
+    
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="path/to/dycalendar-jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> 
+<script src="path/to/dycalendar.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
+<script>
+    AOS.init();
+  </script>
+
+
+<script>
+
+
+    let nameerror = document.querySelector(".name-error");
+    let passerror = document.querySelector(".pass-error");
+    let conpasserror = document.querySelector(".confirm-pass-error");
+    let mailerror = document.querySelector(".mail-error");
+    let submiterror = document.querySelector(".submit-error");
+    let eyebutton = document.querySelector(".eyebutton");
+    let form = document.querySelector("form");
+
+     form.addEventListener("submit",function(){
+      form.preventDefault();
+    });
+    
+    function validname(){
+    let name = document.querySelector("#signup_user").value;
+
+      if(name.length == 0){
+        nameerror.innerHTML = "Username is required";
+        nameerror.style.color = "red";
+        return false;
+      }
+      else{
+        nameerror.innerHTML = '<i class="fa-solid fa-circle-check"></i>' + " " + "valid";
+        nameerror.style.color = "green";
+        return true;
+      }    
+  };
+
+  function validmail(){
+   let mail = document.querySelector("#signup_mail").value;
+
+      if(mail.length == 0){
+        mailerror.innerHTML = "Email is required";
+        mailerror.style.color = "red";
+        return false;
+      }
+      
+      if(!mail.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/)){
+        mailerror.innerHTML = "invalid Email";
+        mailerror.style.color = "red";
+        return false;
+      }
+      else{
+        mailerror.innerHTML = '<i class="fa-solid fa-circle-check"></i>' + " " + "valid";
+        mailerror.style.color = "green";
+        return true;
+      }    
+  };
+
+
+  function validpassword(){
+   let password = document.querySelector("#signup_pass").value;
+
+      if(password.length == 0){
+        passerror.innerHTML = "Password is required";
+        passerror.style.color = "red";
+        return false;
+      }
+      
+      if(!password.match(/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/)){
+        passerror.innerHTML = "password should be minimum 8 charecter, atleast 1 letter and 1 number ";
+        passerror.style.color = "red";
+        return false;
+      }
+      else{
+        passerror.innerHTML = '<i class="fa-solid fa-circle-check"></i>' + " " + "valid";
+        passerror.style.color = "green";
+        return true;
+      }    
+  };
+
+  function confirmpasswordcheck(e){
+
+    let pass = document.querySelector("#signup_pass").value;
+
+    if(e.value.length > 0){
+        if(e.value != pass){
+            conpasserror.innerHTML = "password does not match";
+            conpasserror.style.color = "red";
+            return false;
+        }
+        else{
+            conpasserror.innerHTML = "password match";
+            conpasserror.style.color = "green";
+            return true;
+        }
+    }
+    else{
+        conpasserror.innerHTML = "please confirm your password";
+    }
+  }
+
+
+ /* function showhide(e){
+    let pass = document.querySelector("#signup_pass");
+    var passtype = pass.getAttribute("type");
+
+    if(passtype == "password"){
+        pass.setAttribute("type" , "text");
+        e.classList.remove("fa-eye-slash");
+        e.classList.add("fa-eye");
+    }
+    else{
+        pass.setAttribute("type" , "password");
+        e.classList.add("fa-eye-slash");
+        e.classList.remove("fa-eye");
+    }
+  };
+
+  function confirmshowhide(e){
+    let conpass = document.querySelector("#signup_confirm_pass");
+    var passtype = conpass.getAttribute("type");
+
+    if(passtype == "password"){
+        conpass.setAttribute("type" , "text");
+        e.classList.replace("fa-eye-slash", "fa-eye");
+        
+    }
+    else{
+        conpass.setAttribute("type" , "password");
+        e.classList.add("fa-eye-slash");
+        e.classList.remove("fa-eye");
+    }
+  }*/
+
+
+  function check(){
+    if(!validname() || !validmail() || !validpassword() || !confirmpasswordcheck()){
+      submiterror.style.display = "block";
+      submiterror.innerHTML = "Please fix the error";
+      setTimeout(() =>{
+        submiterror.style.display = "none";
+      },2000);
+      submiterror.style.color = "red";
+      return false;
+    }
+    else{
+      submiterror.innerHTML = '<i class="fa-solid fa-circle-check"></i>' + " " + "valid";
+      submiterror.style.color = "green";
+      return true;
+    }
+  };
+
+
+</script>
+</body>
+</html>

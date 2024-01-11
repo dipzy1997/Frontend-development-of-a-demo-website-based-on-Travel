@@ -1,0 +1,1075 @@
+@media only screen and (min-width:200px) and (max-width:269px){
+    .cursor{
+        display: none;
+    }
+    .loginformbottom,  .signupform, .loginform_html{
+        width: 200px;
+    }
+    .loginformbottom h5 ,  .signupform h5, .loginform_html h5{
+        font-size: 11px;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    .loginform_bottom_flex span i,  .signupform_flex span i{
+        font-size: 22px;
+        padding-top: 10px;
+        padding-right: 10px;
+    }
+    .loginformbottom, .signupform, .loginform_html{
+        padding: 5px;
+    }
+    .loginformbottom form input,  .signupform form input, .loginform_html form input{
+        padding: 5px 20px 5px 10px;
+    }
+    .loginformbottom form label i,  .signupform form label i, .loginform_html form label i{
+        top: 19px;
+        right: 7px;
+    }
+    .loginformbottom form input::placeholder,  .signupform form input::placeholder, .loginform_html form input::placeholder{
+        font-size: 9px;
+    }
+    .loginformbottom form button,  .signupform form button, .loginform_html form button{
+        padding:5px 30px;
+        font-size: 12px;
+    }
+    .social_login_bottom, .social_login_html{
+        flex-direction: column;
+    }
+    .social_login_bottom h6:nth-child(2), .social_login_html h6:nth-child(2){
+        margin-left: 0;
+        margin-top: 5px;
+        padding: 5px 20px;
+        width: 100%;
+    }   
+    .social_login_bottom h6:nth-child(1), .social_login_html h6:nth-child(1){
+        padding: 5px 20px;
+        width: 100%
+    }
+   
+}
+
+@media only screen and (min-width:200px) and (max-width:319px){
+    .cursor{
+        display: none;
+    }
+    .ham {
+        visibility: visible;     
+        top: 17px;
+        right: 20px;
+        width: 25px;
+        height: 25px;
+
+    }
+    .hamcontent {
+        display: block;
+        position: absolute;
+        right: 10px;
+    }
+    .fixed{
+        height: 70px;
+    }
+    .menusidebar{
+        width: 200px !important;
+    }
+    .hamlogoimg{
+        width:150px;
+        height:100px;
+        padding-top: 20px;
+    }
+    .ham-menu .hamul li{
+        font-size: 14px;
+    }
+    .loginform_header_bottom{
+        display: block;
+    }
+    .back-to-top {
+        width: 30px;
+        height: 30px;
+    }
+    .back-to-top i{
+        font-size: 15px;
+    }
+    .header nav {
+        display: none;
+    }
+    .header{
+        width: 100%;
+        margin: auto;
+    }
+    .logo{
+        justify-content: flex-start;
+    }
+    .logo img{
+        width: 100px;
+        height: 50px;
+    }
+    .swiper-button-prev:after, .swiper-button-next:after{
+        padding: 5px 10px !important;
+        font-size: 10px !important;
+    }
+    .b2carddetails p{
+        display: none;
+    }
+    .b2content h1,
+    .b3content h4,
+    .b4text h4,
+    .b5text h4,
+    .b7text h4,
+    .b8head h6,
+    .b1slidetext1 h1,
+    .b1slidetext2 h1,
+    .b1slidetext3 h1,
+    .b1slidetext4 h1, .map h6 {
+        font-size: 16px;
+    }
+
+    .b1slidetext1 p,
+    .b1slidetext2 p,
+    .b1slidetext3 p,
+    .b1slidetext4 p,
+    .b3content p,
+    .b5text p,
+    .b7text p,
+    .b8head p,
+    .b2content p, .b2carddetails h5, .b3content h6, .searchform label {
+        font-size: 10px;
+    }
+    .b2card span{
+        padding: 5px;
+        font-size: 9px;
+    }
+    .b1slide1::before,
+    .b1slide2::before,
+    .b1slide3::before,
+    .b1slide4::before,
+    .b1slide1,
+    .b1slide2,
+    .b1slide3,
+    .b1slide4,
+    .banner_4,
+    .banner_4::before {
+        height: 350px !important;
+    }
+    .map {
+        width: 100%;
+        height: 250px;
+    }
+    .loginform {
+        display: none;
+    }
+    .searchform{
+        flex-direction: column;
+    }
+    .banner_6::before,
+    .banner_6 {
+        height: 350px;
+    }
+    .footcontent1, .footcontent2, .footcontent3, .footcontent4{
+        width: 100%;
+        padding-top: 20px;
+    }
+    .footcontent3 p{
+        padding-bottom: 16px;
+        font-size: 12px;
+    }
+    .footercontent{
+        flex-direction: column;
+    }
+    .copyright h6, .b4card h6, .b4card p {
+        font-size: 10px;
+        line-height: 10px;
+    }
+    .banner_3 {
+        padding: 10px 0 20px 0;
+    }
+
+    .banner_8, .b4text h4 {
+        padding-bottom: 20px;
+    }
+
+    footer {
+        padding: 20px 0 10px 0;
+    }
+    .b4card{
+        padding: 0 0 15px 0px;
+        height: auto;
+        width: 100%;
+    }
+    .banner_2,
+    .banner_4,
+    .banner_5,
+    .banner_7,
+    .b7item, .b7card {
+        padding: 10px;
+    }
+    .b5item{
+        padding: 5px;
+        width: 100%;
+    }
+    .b2content{
+        padding-top: 20px;
+    }
+    .b2card .b2carddetails{
+        transform: translate(-50%, 30%);
+    }
+    .b2carddetails p{
+       padding-top: 45px;
+       font-size: 13px;
+    }
+    .searchform {
+        margin-top: 37px;
+        padding: 20px;
+        align-items: flex-start;
+        width: 100% ;
+        font-size: 14px;
+    }
+    .destination, .travelsearch, .traveltype {
+        width: 100%;
+    }
+    .travelsearch {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .searchform select{
+        margin-left: 0;
+        padding: 10px 0;
+        font-size: 14px;
+    }
+    .travelsearch button {
+        padding: 5px 30px;
+        font-size: 14px;     
+    }
+    .travelsearch button i{
+        display: none;
+    }
+    .b4fstgrid, .b4secondgrid, .bloggerdetails{
+        flex-direction: column;
+    }
+    .banner_4::before, .banner_4{
+        height: auto !important;
+    }
+    .b5card{
+        height: auto !important;
+        padding: 5px;
+    }
+    .b5head h5,  .b5head h6, .b5itemdetails span{
+        font-size: 9px;
+    }
+    .b5cardfoot{
+        padding: 7px;
+        font-size: 16px;
+    }
+    .b5itemdetails p{
+        font-size: 11px; 
+        text-align: justify;
+        padding-top: 0;
+    }
+    .b5card img{
+        height: 100px;
+    }
+    .b7cardimg{
+       display: none;
+    }
+    .searchform label i{
+        font-size: 20px;
+    }
+    .b7cardcontent p, .b7cardcontent h6, .b7cardcontent .profession, .blogcontent h6, .blogcontent p{
+        font-size: 11px;
+        padding-top: 10px;
+    }
+    .b8slide .blogimg img{
+        height: 100px;
+    }
+    .blogcontent p{
+        line-height: 12px;
+    }
+    .bloggerphoto img{
+        width: 30px;
+        height: 30px;
+    }
+    .footcontent1 p, .footcontent4 p, .footcontent2 ul li{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .footcontent2 h6, .footcontent3 h6, .footcontent3 h6{
+        font-size: 14px;
+    }
+    .social_icon h6{
+        font-size: 10px;
+    }
+    .footlogo {
+        width: 170px;
+        height: 92px;
+    }
+    
+
+    .mainbodypart{
+        flex-direction: column;
+    }
+    .tourcompany_gallery{
+        width: 100%;
+        padding-left: 0;
+    }
+    .tour_details{
+        width: 100%;
+        margin: auto;
+    }
+    .swiscard_img, .swedencard_img, .italycard_img, .greececard_img, .delhicard_img, .lakshadweepcard_img, .jaipurcard_img, .rajasthancard_img{
+        height: 150px;
+        width: 100%;
+    }
+    .europetour .europetour_ul, .indiatour, .indiatour_ul {
+        columns: 3 150px;
+        max-width: 700px;
+        margin-top: 10px;
+    }
+    .tourcompany_gallery h6{
+        padding-top: 25px;
+        font-size: 15px;
+    }
+    .europetour .europetour_ul li h5, .indiatour .indiatour_ul li h5{
+        transform: translate(-50%, -800%);
+    }
+    .swiscard_details h5, .swedencard_details h5, .italycard_details h5, .greececard_details h5, .rajasthancard_details h5, .jaipurcard_details h5, .lakshadweepcard_details h5, .delhicard_details h5, .swiscard_details p, .swedencard_details p, .italycard_details p, .greececard_details p, .rajasthancard_details p, .jaipurcard_details p, .lakshadweepcard_details p, .delhicard_details p {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+    .swiscard_details p i, .swedencard_details p i, .italycard_details p i, .greececard_details p i, .rajasthancard_details p i, .jaipurcard_details p i, .lakshadweepcard_details p i, .delhicard_details p i, .swiscard_details p, .swedencard_details p, .italycard_details p, .greececard_details p, .rajasthancard_details p, .jaipurcard_details p, .lakshadweepcard_details p, .delhicard_details p{
+        font-size: 18px;
+    }
+    .europetour_ul li img, .indiatour_ul li img{
+        height: 130px;
+    }
+    .swiscard_details, .swedencard_details, .italycard_details, .greececard_details, .rajasthancard_details, .jaipurcard_details, .lakshadweepcard_details, .delhicard_details{
+        padding: 10px;
+        width: 100%;
+    }
+    .switzerland_card, .sweden_card, .italy_card, .greece_card, .delhi_card, .lakshadweep_card, .jaipur_card, .rajasthan_card{
+        flex-direction: column;
+    }
+    .rating_star{
+        display: none;
+    }
+    .swiscard_details h6, .swedencard_details h6, .italycard_details h6, .greececard_details h6, .rajasthancard_details h6, .jaipurcard_details h6, .lakshadweepcard_details h6, .delhicard_details h6, .swiscard_details h6 span, .swedencard_details h6 span, .italycard_details h6 span, .greececard_details h6 span, .rajasthancard_details h6 span, .jaipurcard_details h6 span, .lakshadweepcard_details h6 span, .delhicard_details h6 span {
+        font-size: 14px;
+    }
+    .europe, .india {
+        padding: 20px 0;
+    }
+}
+
+
+@media only screen and (min-width:320px) and (max-width:459px) {
+    .cursor{
+        display: none;
+    }
+    .ham {
+        visibility: visible;  
+        right: 20px;  
+    }
+    .hamcontent {
+        display: block;
+        position: absolute;
+        right: 10px;
+
+    }
+    .loginform_header_bottom{
+        display: block;
+    }
+    .back-to-top {
+        width: 30px;
+        height: 30px;
+    }
+    .back-to-top i{
+        font-size: 15px;
+    }
+    .header nav {
+        display: none;
+    }
+    .header{
+        width: 100%;
+        margin: auto;
+    }
+    .b2content h1,
+    .b3content h4,
+    .b4text h4,
+    .b5text h4,
+    .b7text h4,
+    .b8head h6,
+    .b1slidetext1 h1,
+    .b1slidetext2 h1,
+    .b1slidetext3 h1,
+    .b1slidetext4 h1 {
+        font-size: 22px;
+    }
+
+    .b1slidetext1 p,
+    .b1slidetext2 p,
+    .b1slidetext3 p,
+    .b1slidetext4 p,
+    .b3content p,
+    .b5text p,
+    .b7text p,
+    .b8head p,
+    .b2content p {
+        font-size: 11px;
+    }
+
+    .b1slide1::before,
+    .b1slide2::before,
+    .b1slide3::before,
+    .b1slide4::before,
+    .b1slide1,
+    .b1slide2,
+    .b1slide3,
+    .b1slide4,
+    .banner_4,
+    .banner_4::before {
+        height: 400px !important;
+    }
+    .map {
+        width: 100%;
+        height: 250px;
+    }
+
+    .loginform {
+        display: none;
+    }
+    .searchform{
+        flex-direction: column;
+    }
+    .destination, .travelsearch, .traveltype {
+        width: 100%;
+    }
+    .travelsearch {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .banner_6::before,
+    .banner_6 {
+        height: 380px;
+    }
+    .footcontent1, .footcontent2, .footcontent3, .footcontent4{
+        width: 100%;
+        padding-top: 20px;
+    }
+    .footcontent3 p{
+        padding-bottom: 16px;
+    }
+    .footercontent{
+        flex-direction: column;
+    }
+    .copyright h6{
+        font-size: 10px;
+    }
+    .banner_3 {
+        padding: 10px 0 20px 0;
+    }
+
+    .banner_8, .b4text h4 {
+        padding-bottom: 20px;
+    }
+
+    footer {
+        padding: 20px 0 10px 0;
+    }
+    .b4card{
+        padding: 0 0 15px 0;
+        height: auto;
+    }
+    .banner_2,
+    .banner_4,
+    .banner_5,
+    .b5item,
+    .banner_7,
+    .b7item, .b7card {
+        padding: 10px;
+    }
+    .b2content{
+        padding-top: 20px;
+    }
+    .b2card .b2carddetails{
+        transform: translate(-50%, 55%);
+    }
+    .b2carddetails p{
+       padding-top: 45px;
+       font-size: 13px;
+    }
+    .searchform {
+        margin-top: 37px;
+        padding: 20px;
+        align-items: flex-start;
+        width: 100% ;
+        font-size: 14px;
+    }
+    .searchform select{
+        margin-left: 0;
+        padding: 10px;
+    }
+    .travelsearch button {
+        padding: 10px 40px;
+        font-size: 14px;     
+    }
+    .travelsearch button i{
+        display: none;
+    }
+    .b4fstgrid, .b4secondgrid{
+        flex-direction: column;
+    }
+    .banner_4::before, .banner_4{
+        height: auto !important;
+    }
+    .b5card{
+        height: auto !important;
+        padding: 10px;
+    }
+    .b5cardfoot{
+        padding: 10px;
+        font-size: 20px;
+    }
+    .b5itemdetails p{
+        font-size: 13px; 
+        text-align: justify;
+    }
+    .b5card img{
+        height: 180px;
+    }
+    .b7cardimg{
+        width: 50px;
+        height: 50px;
+        transform: translate(-50%, -230%);
+        border: 3px solid #fff;
+    }
+    .social_icon h6{
+        font-size: 10px;
+    }
+    .footlogo {
+        width: 170px;
+        height: 92px;
+    }
+    
+
+    .mainbodypart{
+        flex-direction: column;
+    }
+    .tourcompany_gallery{
+        width: 100%;
+        padding-left: 0;
+    }
+    .tour_details{
+        width: 100%;
+        margin: auto;
+    }
+    .swiscard_img, .swedencard_img, .italycard_img, .greececard_img, .delhicard_img, .lakshadweepcard_img, .jaipurcard_img, .rajasthancard_img{
+        height: 150px;
+        width: 400px;
+    }
+    .europetour .europetour_ul, .indiatour, .indiatour_ul {
+        columns: 3 150px;
+        max-width: 700px;
+    }
+    .tourcompany_gallery h6{
+        padding-top: 30px;
+        font-size: 18px;
+    }
+    .europetour .europetour_ul li h5, .indiatour .indiatour_ul li h5{
+        transform: translate(-50%, -800%);
+    }
+    .swiscard_details h5, .swedencard_details h5, .italycard_details h5, .greececard_details h5, .rajasthancard_details h5, .jaipurcard_details h5, .lakshadweepcard_details h5, .delhicard_details h5, .swiscard_details p, .swedencard_details p, .italycard_details p, .greececard_details p, .rajasthancard_details p, .jaipurcard_details p, .lakshadweepcard_details p, .delhicard_details p {
+        font-size: 14px;
+    }
+    .swiscard_details p i, .swedencard_details p i, .italycard_details p i, .greececard_details p i, .rajasthancard_details p i, .jaipurcard_details p i, .lakshadweepcard_details p i, .delhicard_details p i, .swiscard_details p, .swedencard_details p, .italycard_details p, .greececard_details p, .rajasthancard_details p, .jaipurcard_details p, .lakshadweepcard_details p, .delhicard_details p{
+        font-size: 18px;
+    }
+    .europetour_ul li img, .indiatour_ul li img{
+        height: 175px;
+    }
+    .swiscard_details, .swedencard_details, .italycard_details, .greececard_details, .rajasthancard_details, .jaipurcard_details, .lakshadweepcard_details, .delhicard_details{
+        padding: 0 10px 0 10px;
+    }
+}
+
+@media only screen and (min-width:460px) and (max-width:679px) {
+    .cursor{
+        display: none;
+    }
+    .ham {
+        visibility: visible;  
+        right: 20px;
+    }
+    .hamcontent {
+        display: block;
+        position: absolute;
+        right: 10px;
+
+    }
+    .loginform_head{
+        display: block;
+    }
+    .back-to-top {
+        width: 35px;
+        height: 35px;
+    }
+    .back-to-top i{
+        font-size: 20px;
+    }
+    .header nav {
+        display: none;
+    }
+    .header{
+        width: 100%;
+    }
+    .b2content h1,
+    .b3content h4,
+    .b4text h4,
+    .b5text h4,
+    .b7text h4,
+    .b8head h6,
+    .b1slidetext1 h1,
+    .b1slidetext2 h1,
+    .b1slidetext3 h1,
+    .b1slidetext4 h1 {
+        font-size: 28px;
+    }
+
+    .b1slidetext1 p,
+    .b1slidetext2 p,
+    .b1slidetext3 p,
+    .b1slidetext4 p,
+    .b3content p,
+    .b5text p,
+    .b7text p,
+    .b8head p,
+    .b2content p {
+        font-size: 14px;
+    }
+
+    .b1slide1::before,
+    .b1slide2::before,
+    .b1slide3::before,
+    .b1slide4::before,
+    .b1slide1,
+    .b1slide2,
+    .b1slide3,
+    .b1slide4,
+    .banner_4,
+    .banner_4::before {
+        height: 550px !important;
+    }
+
+    .banner_3 {
+        padding: 15px 0 30px 0;
+    }
+
+    .banner_8 {
+        padding-bottom: 30px;
+    }
+
+    footer {
+        padding: 30px 0 20px 0;
+    }
+
+    .banner_2,
+    .banner_4,
+    .banner_5,
+    .b5item,
+    .banner_7,
+    .b7item {
+        padding: 22px 0;
+    }
+
+    .b2content,
+    .footcontent4 ul li {
+        padding-top: 20px;
+        margin-right: 0;
+    }
+
+    .b4fstgrid,
+    .b4secondgrid {
+        width: 100%;
+    }
+
+    .b4card,
+    .b4text h4 {
+        padding: 10px;
+    }
+
+    .b4card p,
+    .footcontent1 p,
+    .footcontent4 p,
+    .blogcontent p {
+        font-size: 11px;
+        line-height: 14px;
+    }
+    .footcontent2 h6, .footcontent3 h6, .footcontent4 h6{
+        font-size: 12px;
+    }
+    .b4card {
+        margin-bottom: 10px;
+    }
+
+    .searchform {
+        width: 100%;
+        padding: 10px;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .travelsearch button {
+        padding: 5px 20px;
+        font-size: 12px;
+    }
+
+    .searchform label,
+    .b4card h6,
+    .footcontent2 ul li,
+    .footcontent3 p, .copyright h6 {
+        font-size: 12px;
+    }
+
+    .searchform select {
+        font-size: 14px;
+        margin-left: 0;
+        padding: 0;
+        margin-right: 10px;
+    }
+
+    .searchform label i {
+        font-size: 22px;
+    }
+
+    .map {
+        width: 100%;
+        height: 300px;
+    }
+
+    .loginform {
+        display: none;
+    }
+    .banner_6::before,
+    .banner_6 {
+        height: 420px;
+    }
+    .footcontent1, .footcontent2, .footcontent3, .footcontent4{
+        width: 100%;
+        padding-top: 20px;
+    }
+    .footcontent3 p{
+        padding-bottom: 16px;
+    }
+    .footercontent{
+        flex-direction: column;
+    }
+    .social_icon h6{
+        font-size: 10px;
+    }
+    .footlogo {
+        width: 170px;
+        height: 92px;
+    }
+    
+
+    .mainbodypart{
+        flex-direction: column;
+    }
+    .tourcompany_gallery{
+        width: 100%;
+        padding-left: 0;
+    }
+    
+    .tour_details{
+        width: 100%;
+        margin: auto;
+    }
+    .swiscard_img, .swedencard_img, .italycard_img, .greececard_img, .delhicard_img, .lakshadweepcard_img, .jaipurcard_img, .rajasthancard_img{
+        height: 200px;
+        width: 400px;
+    }
+    .europetour .europetour_ul, .indiatour, .indiatour_ul {
+        columns: 3 150px;
+        max-width: 700px;
+    }
+    .tourcompany_gallery h6{
+        padding-top: 30px;
+        font-size: 24px;
+    }
+    .europetour .europetour_ul li h5, .indiatour .indiatour_ul li h5{
+        transform: translate(-50%, -800%);
+    }
+    .swiscard_details h5, .swedencard_details h5, .italycard_details h5, .greececard_details h5, .rajasthancard_details h5, .jaipurcard_details h5, .lakshadweepcard_details h5, .delhicard_details h5, .swiscard_details p, .swedencard_details p, .italycard_details p, .greececard_details p, .rajasthancard_details p, .jaipurcard_details p, .lakshadweepcard_details p, .delhicard_details p {
+        font-size: 14px;
+    }
+    .swiscard_details p i, .swedencard_details p i, .italycard_details p i, .greececard_details p i, .rajasthancard_details p i, .jaipurcard_details p i, .lakshadweepcard_details p i, .delhicard_details p i, .swiscard_details p, .swedencard_details p, .italycard_details p, .greececard_details p, .rajasthancard_details p, .jaipurcard_details p, .lakshadweepcard_details p, .delhicard_details p{
+        font-size: 18px;
+    }
+    .europetour_ul li img, .indiatour_ul li img{
+        height: 175px;
+    }
+
+}
+
+@media only screen and (min-width:680px) and (max-width:991px) {
+    .ham {
+        visibility: visible;
+        right: 20px;
+    }
+
+    .hamcontent {
+        display: block;
+        position: absolute;
+        right: 10px;
+    }
+    .loginform_head{
+        display: block;
+    }
+    .header nav {
+        display: none;
+    }
+
+    .searchform {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .travelsearch button {
+        padding: 5px 20px;
+        font-size: 12px;
+    }
+
+    .searchform label,
+    .b4card h6,
+    .footcontent2 ul li,
+    .footcontent3 p {
+        font-size: 14px;
+    }
+
+    .banner_3 {
+        padding: 20px 0 40px 0;
+    }
+
+    .banner_8 {
+        padding-bottom: 40px;
+    }
+
+    footer {
+        padding: 40px 0 30px 0;
+    }
+
+    .banner_2,
+    .banner_4,
+    .banner_5,
+    .b5item,
+    .banner_7,
+    .b7item {
+        padding: 30px 0;
+    }
+
+    .b2content,
+    .footcontent4 ul li {
+        padding-top: 20px;
+        margin-right: 0;
+    }
+
+    .b4text h4 {
+        padding-bottom: 10px;
+    }
+
+    .b4card {
+        margin-bottom: 20px;
+    }
+
+    .b4card p,
+    .footcontent1 p,
+    .footcontent4 p,
+    .blogcontent p {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .b2content h1,
+    .b3content h4,
+    .b4text h4,
+    .b5text h4,
+    .b7text h4,
+    .b8head h6,
+    .b1slidetext1 h1,
+    .b1slidetext2 h1,
+    .b1slidetext3 h1,
+    .b1slidetext4 h1 {
+        font-size: 35px;
+    }
+
+    .b1slidetext1 p,
+    .b1slidetext2 p,
+    .b1slidetext3 p,
+    .b1slidetext4 p,
+    .b3content p,
+    .b5text p,
+    .b7text p,
+    .b8head p,
+    .b2content p {
+        font-size: 18px;
+    }
+
+    .b1slide1::before,
+    .b1slide2::before,
+    .b1slide3::before,
+    .b1slide4::before,
+    .b1slide1,
+    .b1slide2,
+    .b1slide3,
+    .b1slide4 {
+        height: 600px !important;
+    }
+
+    .banner_4,
+    .banner_4::before {
+        height: 550px;
+    }
+
+    .bloggerdetails {
+        padding: 0 5px 15px 5px;
+    }
+
+    .footcontent2 h6,
+    .footcontent3 h6,
+    .footcontent4 h6,
+    .copyright h6,
+    .blogcontent h6 {
+        font-size: 14px;
+    }
+
+    .footcontent4 ul li {
+        width: 50px;
+    }
+
+    .bloggerphoto h5,
+    .bloggerdetails h6 {
+        font-size: 10px;
+    }
+
+    .map {
+        width: 100%;
+        height: 300px;
+    }
+
+    .loginform {
+        display: none;
+    }
+
+    .banner_6::before,
+    .banner_6 {
+        height: 420px;
+    }
+    .traveltype {
+        width: 100%;
+        text-align: center;
+    }
+    .footcontent3 p {
+        padding-top: 10px;
+    }
+
+
+    .mainbodypart{
+        flex-direction: column;
+    }
+    .tourcompany_gallery{
+        width: 100%;
+    }
+    .tour_details{
+        width: 80%;
+        margin: auto;
+    }
+    .swiscard_img, .swedencard_img, .italycard_img, .greececard_img, .delhicard_img, .lakshadweepcard_img, .jaipurcard_img, .rajasthancard_img{
+        height: 250px;
+    }
+    .europetour .europetour_ul, .indiatour, .indiatour_ul {
+        columns: 3 150px;
+        max-width: 700px;
+    }
+    .tourcompany_gallery h6{
+        padding-top: 30px;
+    }
+    .europetour .europetour_ul li h5, .indiatour .indiatour_ul li h5{
+        transform: translate(-50%, -800%);
+    }
+}
+
+@media only screen and (min-width:992px) and (max-width:1365px) {
+    .header {
+        width: 100%;
+    }
+
+    .header ul li {
+        margin-right: 15px;
+        font-size: 13px !important;
+    }
+
+    .b2gallery .b2images {
+        margin-top: 20px;
+        columns: 3 350px
+    }
+
+    .b3content h4,
+    .b5text h4,
+    .b7text h4,
+    .b8head h6 {
+        font-size: 40px;
+    }
+
+    .searchform {
+        width: 100%;
+    }
+
+    .banner_3 {
+        padding: 20px 0 80px 0;
+    }
+
+    .banner_5,
+    .b5item,
+    .banner_7,
+    .banner_2 {
+        padding: 40px 0;
+    }
+
+    .b2content {
+        padding-top: 20px;
+    }
+
+    .loginform {
+        padding: 30px;
+    }
+
+    .bloggerdetails {
+        padding: 0 8px 15px 8px;
+    }
+
+    .footcontent4 ul li {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+    .destination, .travelsearch, .traveltype {
+        width: 100%;
+        text-align: center;
+    }
+    .social_login{
+        width: 225px;
+        margin: 15px auto;
+    }
+
+
+    .europetour_ul li img, .indiatour_ul li img {
+        width: 100%;
+        height: 180px;
+    }
+    .europetour .europetour_ul li h5, .indiatour .indiatour_ul li h5{
+        transform: translate(-50%, -700%);
+    }
+    .tourcompany_gallery h6{
+        font-size: 24px;
+    }
+    .europetour .europetour_ul, .indiatour, .indiatour_ul {
+        margin-top: 0px;
+    }
+}

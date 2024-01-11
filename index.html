@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVEL WEBSITE BY DIPANWITA SAHA</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" href="responsive.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+</head>
+<body>
+<!--CUSTOMISED CURSOR-->
+
+<div class="cursor"></div>
+
+<!--BACKDROP-->
+
+<div class="backdrop"></div>
+
+    <!--PRELOADER-->
+
+    <div class="preloader">
+        <div class="circle">
+          <img src="image/flight.png" class="loadimg">
+          <div class="load">
+            <div class="dot" style="--i:0;"></div>
+            <div class="dot" style="--i:1;"></div>
+            <div class="dot" style="--i:2;"></div>
+            <div class="dot" style="--i:3;"></div>
+            <div class="dot" style="--i:4;"></div>
+            <div class="dot" style="--i:5;"></div>
+            <div class="dot" style="--i:6;"></div>
+         </div>
+         <h6 class="text-uppercase">loading...</h6>
+        </div>
+      </div>
+
+<!--BACK TO TOP-->
+
+      <div class="back-to-top">
+        <a href="#"> <i class="fa-solid fa-angle-up"></i> </a>
+       </div>
+
+    <!--HEADER-->
+
+    <header>
+        <div class="container">
+            <div class="header">
+
+                <div class="logo">
+                    <img src="image/logo.png" alt="">
+                </div>
+    
+                <nav>
+                    <ul id="mainli">
+                        <li class="mainli_active"><a href="#"><i class="fa-solid fa-house"></i>&nbsp;home</a></li>
+                        <li><a href="#about_us"><i class="fa-regular fa-circle-question"></i>&nbsp;about us</a></li>
+                        <li><a href="#b2destination"><i class="fa-solid fa-location-dot"></i>&nbsp;destination&nbsp;<i class="fa-solid fa-caret-down"></i></a>
+                             
+                            <div class="destination_subdiv">
+                                <ul class="dest_subul">
+                                    <li><a href="#b5tour">top rated destination</a></li>
+                                    <li><a href="India.html">most visited place</a></li>
+                                </ul>
+                            </div>
+
+
+                        </li>
+                        <li><a href="#b5tour"><i class="fa-solid fa-plane-departure"></i>&nbsp;tour&nbsp;<i class="fa-solid fa-caret-down"></i></a>
+                            <div class="tour_subdiv">
+                                <ul class="tour_subul">
+                                    <li><a href="America.html">america</a></li>
+                                    <li><a href="europe.html">europe</a></li>
+                                    <li><a href="Asia.html">asia</a></li>
+                                    <li><a href="India.html">india</a></li>
+                                    <li><a href="Australia.html">australia</a></li>
+                                    <li><a href="South_africa.html">south africa</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#b8blogging"><i class="fa-solid fa-bars-staggered"></i>&nbsp;blog</a></li>
+                        <li><a href="#footer_contact"><i class="fa-solid fa-phone"></i>&nbsp;contact us</a></li>
+                    </ul>
+                </nav>
+    
+                <!--HAMBURGER MENU-->
+    
+              <div class="hamcontent">
+                    <div class="ham">
+                        <span class="hamspan"></span>
+                        <span class="hamspan"></span>
+                        <span class="hamspan"></span>
+                    </div>
+    
+                    <!--SIDEBAR MENU FOR HAMBURGUR-->
+
+                    <div class="menusidebar">
+                        <div class="menucontent">
+                            <div class="hamlogoimg">
+                              <img src="image/logo.png">
+                            </div>
+                        </div>
+
+                        <div class="ham-menu">
+                            <ul class="hamul">
+                                <li><a href="#"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;home</a></li>
+                                <li><a href="#about_us"><i class="fa-regular fa-circle-question"></i>&nbsp;&nbsp;about us</a></li>
+                                <li><a href="#b2destination"><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;destination</a></li>
+                                <li><a href="#b5tour"><i class="fa-solid fa-plane-departure"></i>&nbsp;&nbsp;tour</a></li>
+                                <li><a href="#b8blogging"><i class="fa-solid fa-bars-staggered"></i>&nbsp;&nbsp;blog</a></li>
+                                <li><a href="#footer_contact"><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;contact us</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+<!--LOG IN/ SIGN UP FORM VISIBLE IN RESPONSIVE IN BIG SCREEN-->
+
+    <div class="loginform_head">
+        <h6><i class="fa-regular fa-user"></i>&nbsp;LOG IN/SIGN UP</h6>
+        <div class="loginformhead">
+            <div class="loginform_head_flex">
+                <h5>connect with us</h5>
+                <span id="logcross"><i class="fa-regular fa-circle-xmark"></i></span>
+            </div>
+            
+            <form autocomplete="off">
+                <div class="username_head">
+                <input type="text" name="username" placeholder="username" id="username" required>
+                <label for="username"><i class="fa-solid fa-user"></i></label>
+                </div>
+              
+                <div class="email_head">
+                    <input type="email" name="email" placeholder="email id" id="email" required>
+                    <label for="email"><i class="fa-solid fa-envelope"></i></label>
+                </div>
+                
+                <div class="password_head">
+                    <input type="password" name="password" placeholder="password" id="password" required>
+                    <label for="password"><i class="fa-solid fa-eye-slash"></i></label>
+                </div>
+ 
+                <h5><a href="">forgot password?</a></h5>
+                <button type="submit">log in</button>
+                <h6>or login with</h6>
+                <div class="social_login_head">
+                    <h6><a href=><i class="fa-brands fa-facebook-f"></i>&nbsp;&nbsp; facebook</a></h6>
+                    <h6><a href=""><i class="fa-brands fa-instagram"></i>&nbsp;&nbsp; instagram</a></h6>
+                </div>
+                <h6>don't have an account? <a href="signup.html#signupid">sign up now</a></h6>
+            </form>
+        </div>
+    </div>
+
+                
+                
+
+                <!--LOG IN/ SIGN UP FORM VISIBLE IN RESPONSIVE IN SMALL SCREEN-->
+
+          <div class="loginform_header_bottom">
+               <h6><i class="fa-regular fa-user"></i>&nbsp;LOG IN/SIGN UP</h6>
+
+               <div class="loginformbottom">
+                <div class="loginform_bottom_flex">
+                    <h5>connect with us</h5>
+                    <span id="logcross_bottom"><i class="fa-regular fa-circle-xmark"></i></span>
+                </div>
+                
+                <form autocomplete="off">
+                    <div class="username_bottom">
+                    <input type="text" name="username" placeholder="username" id="username_bottom" required>
+                    <label for="username_bottom"><i class="fa-solid fa-user"></i></label>
+                    </div>
+                  
+                    <div class="email_bottom">
+                        <input type="email" name="email" placeholder="email id" id="email_bottom" required>
+                        <label for="email_bottom"><i class="fa-solid fa-envelope"></i></label>
+                    </div>
+                    
+                    <div class="password_bottom">
+                        <input type="password" name="password" placeholder="password" id="password_bottom" required>
+                        <label for="password_bottom"><i class="fa-solid fa-eye-slash"></i></label>
+                    </div>
+     
+                    <h5><a href="">forgot password?</a></h5>
+                    <button type="submit">log in</button>
+                    <h6>or login with</h6>
+                    <div class="social_login_bottom">
+                        <h6><a href=><i class="fa-brands fa-facebook-f"></i>&nbsp;&nbsp; facebook</a></h6>
+                        <h6><a href=""><i class="fa-brands fa-instagram"></i>&nbsp;&nbsp; instagram</a></h6>
+                    </div>
+                    <h6>don't have an account? <a href="signup.html#signupid">sign up now</a></h6>
+                </form>
+            </div>
+          </div>
+
+
+            </div>
+        </div>
+        
+        
+    </header>
+
+    <!--BANNER_1-->
+
+    <section class="banner_1">
+        <div class="video">
+            <div class="swiper b1swiper">
+
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide b1slide1">
+                   <div class="b1slidetext1">
+                      <h1>Experience an adventurous travel!</h1>
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, sed officia dignissimos dolore. quod veniam libero quidem omnis ratione quibusdam iusto, doloremque accusantium nihil obcaecati nesciunt fugiat ea.</p>
+                   </div>
+                   </div>
+                   <div class="swiper-slide b1slide2">
+                    <div class="b1slidetext2">
+                        <h1>Beauty of biodiversity!</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, sed officia dignissimos dolore. quod veniam libero quidem omnis ratione quibusdam iusto, doloremque accusantium nihil obcaecati nesciunt fugiat ea.</p>
+                     </div>
+                  </div>   
+                    
+                  <div class="swiper-slide b1slide3">
+                    <div class="b1slidetext3">
+                        <h1>A journey to the ultimate beauty of nature!</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, sed officia dignissimos dolore. quod veniam libero quidem omnis ratione quibusdam iusto, doloremque accusantium nihil obcaecati nesciunt fugiat ea.</p>
+                     </div>
+                  </div>
+
+                  <div class="swiper-slide b1slide4">
+                    <div class="b1slidetext4">
+                        <h1>An exotic mode of vacation!</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, sed officia dignissimos dolore. quod veniam libero quidem omnis ratione quibusdam iusto, doloremque accusantium nihil obcaecati nesciunt fugiat ea.</p>
+                     </div>
+                  </div>
+                  
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              
+              </div>
+        </div>
+    </section>
+
+    <!--BANNER_2-->
+
+    <section class="banner_2" id="b2destination">
+        <div class="container">
+             <div class="b2content">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">top desti<span>nation</span></h1>
+                <p data-aos="fade-up" data-aos-duration="1000">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, aliquam harum? Nesciunt, mollitia, ut a culpa at odit cupiditate repellat expedita soluta.</p>
+             </div>
+
+             <div class="b2gallery" data-aos="zoom-in-up" data-aos-duration="1000">
+                <ul class="b2images">
+                    <li class="b2card">
+                        <img src="image/australia1.jpg" alt="">
+                        <span>2 tours</span>
+                        <div class="b2carddetails">
+                            <h5>australia</h5>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta assumenda ad at...</p>
+                            <a href="Australia.html"><h6>view all tours</h6></a>
+                        </div>
+                    </li>
+
+                    <li class="b2card">
+                        <img src="image/america1.jpg" alt="">
+                        <span>3 tours</span>
+                        <div class="b2carddetails">
+                            <h5>america</h5>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta assumenda ad at...</p>
+                            <a href="America.html"><h6>view all tours</h6></a>
+                        </div>
+                    </li>
+
+                    <li class="b2card">
+                        <img src="image/delhi2.jpg" alt="">
+                        <span>4 tours</span>
+                        <div class="b2carddetails">
+                            <h5>india</h5>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta assumenda ad at...</p>
+                            <a href="India.html"><h6>view all tours</h6></a>
+                        </div>
+                    </li>
+
+                    <li class="b2card">
+                        <img src="image/paris.jpg" alt="">
+                        <span>4 tours</span>
+                        <div class="b2carddetails">
+                            <h5>europe</h5>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta assumenda ad at...</p>
+                            <a href="europe.html"><h6>view all tours</h6></a>
+                        </div>
+                    </li>
+
+                    <li class="b2card">
+                        <img src="image/asia.jpg" alt="">
+                        <span>6 tours</span>
+                        <div class="b2carddetails">
+                            <h5>asia</h5>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta assumenda ad at...</p>
+                            <a href="Asia.html"><h6>view all tours</h6></a>
+                        </div>
+                    </li>
+
+                    <li class="b2card">
+                        <img src="image/africa.jpg" alt="">
+                        <span>2 tours</span>
+                        <div class="b2carddetails">
+                            <h5>south africa</h5>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta assumenda ad at...</p>
+                            <a href="South_africa.html"><h6>view all tours</h6></a>
+                        </div>
+                    </li>
+
+                    <li class="b2card">
+                        <img src="image/dubai1.jpg" alt="">
+                       
+                        <div class="b2carddetails">
+                            <h5>dubai</h5>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta assumenda ad at...</p>
+                           
+                        </div>
+                    </li>
+
+                    <li class="b2card">
+                        <img src="image/moscow.jpg" alt="">
+                       
+                        <div class="b2carddetails">
+                            <h5>Russia</h5>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta assumenda ad at...</p>                          
+                        </div>
+                    </li>
+
+                    <li class="b2card">
+                        <img src="image/sea3.jpg" alt="">
+                       
+                        <div class="b2carddetails">
+                            <h5>maldives</h5>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta assumenda ad at...</p>                          
+                        </div>
+                    </li>
+
+                </ul>
+             </div>
+        </div>
+    </section>
+
+  <!--BANNER_3-->
+
+  <section class="banner_3">
+        <div class="container">
+            <div class="b3content">
+                <h6 data-aos="fade-up" data-aos-duration="1000">choose your trip</h6>
+                <h4 data-aos="zoom-in" data-aos-duration="1000">plan your <span>exotic vacation</span> with us!!</h4>
+                <p data-aos="fade-up" data-aos-duration="1000">Looking for your dream vacation destination but don't know where to start? With the help of our experienced and knowledgeable agents, you can plan your next trip. </p>
+            </div>
+
+            <div class="searchform">
+
+                 <div class="destination">
+                    <label for="Destination"><i class="fa-solid fa-location-dot"></i> &nbsp;&nbsp; Destination</label><br/>
+                    <select name="Destination" id="Destination">
+                       <optgroup label="Asia"> 
+                           <option>-India</option>
+                           <option>-China</option>
+                           <option>-Srilanka</option>
+                       </optgroup>
+                       <optgroup label="America"> 
+                        <option>-California</option>
+                        <option>-Mexico</option>
+                        <option>-San Fransisco</option>
+                    </optgroup>
+                    <optgroup label="Europe"> 
+                        <option>-Greece</option>
+                        <option>-Switzerland</option>
+                        <option>-Italy</option>
+                    </optgroup>
+                    </select>
+                 </div>
+
+                 <div class="traveltype">
+                    <label for="traveltype"><i class="fa-solid fa-location-crosshairs"></i>&nbsp;&nbsp;Travel typologies</label><br/>
+                    <select name="traveltype" id="traveltype">
+                        <option>Adventure</option>
+                        <option>Romantic</option>
+                        <option>Family trip</option>
+                        <option>Budget friendly</option>
+                        <option>Beach Holidays</option>
+                        <option>Sports activities</option>
+                        <option>Popular</option>
+                    </select>
+                 </div>
+
+
+                 <div class="travelsearch">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i>&nbsp;&nbsp;search</button>
+                 </div>
+
+            </div>
+        </div>
+  </section>
+
+
+  <!--BANNER_4-->
+
+  <section class="banner_4" id="about_us">
+    <div class="container">
+      <div class="b4text">
+        <h4 data-aos="zoom-in" data-aos-duration="1000">why our <span>customer</span> choose us?</h4>
+      </div>
+      <div class="b4content">
+        <div class="b4fstgrid">
+            <div class="b4card">
+                <h6><i class="fa-solid fa-earth-asia"></i>&nbsp;&nbsp;incredible journey</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis commodi tenetur quam alias rerum dolore illum necessitatibus corporis molestias id temporibus a. </p>
+            </div>
+            <div class="b4card">
+                <h6><i class="fa-solid fa-circle-nodes"></i>&nbsp;&nbsp;proper connectivity</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis commodi tenetur quam alias rerum dolore illum necessitatibus corporis molestias id temporibus a. </p>
+            </div>
+            <div class="b4card">
+                <h6><i class="fa-regular fa-calendar-days"></i>&nbsp;&nbsp;diverse destination</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis commodi tenetur quam alias rerum dolore illum necessitatibus corporis molestias id temporibus a. </p>
+            </div>
+        </div>
+        
+        <div class="b4secondgrid">
+            <div class="b4card">
+                <h6><i class="fa-solid fa-plane-departure"></i>&nbsp;&nbsp;guided tours</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis commodi tenetur quam alias rerum dolore illum necessitatibus corporis molestias id temporibus a. </p>
+            </div>
+            <div class="b4card">
+                <h6><i class="fa-solid fa-train-subway"></i>&nbsp;&nbsp;adventurous travel</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis commodi tenetur quam alias rerum dolore illum necessitatibus corporis molestias id temporibus a. </p>
+            </div>
+            <div class="b4card">
+                <h6><i class="fa-solid fa-utensils"></i>&nbsp;&nbsp;good food</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis commodi tenetur quam alias rerum dolore illum necessitatibus corporis molestias id temporibus a. </p>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+<!--BANNER_5-->
+
+<section class="banner_5" id="b5tour">
+    <div class="container">
+        <div class="b5text">
+            <h4 data-aos="zoom-in" data-aos-duration="1000">our most <span>popular</span> tour</h4>
+            <p data-aos="fade-up" data-aos-duration="1000">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium fugit, beatae quas blanditiis obcaecati quia cupiditate,hic expedita ut provident.</p>
+        </div>
+        <div class="b5content">
+            <div class="owl-carousel owl-theme" id="b5slider">
+                <div class="item b5item">
+                    <div class="b5card">
+                        <img src="image/switzerland.jpg"/>
+                    <div class="b5itemdetails">
+                        <div class="b5head">
+                            <h5>switzerland</h5>
+                            <h6>$1000</h6>
+                        </div>
+                        <br/>
+                        <span>8.2 Rating</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi suscipit, repellat nobis dolore laboriosam incidunt autem asperiores Veritatis, officiis.</p>
+                        <div class="b5cardfoot">
+                           <h6>5 Days 4 Night</h6> 
+                        </div>
+                    </div>
+                    </div>              
+                </div>          
+                
+                <div class="item b5item">
+                    <div class="b5card">
+                        <img src="image/greece2.jpg"/>
+                    <div class="b5itemdetails">
+                        <div class="b5head">
+                            <h5>greece</h5>
+                            <h6>$800</h6>
+                        </div>
+                        <br/>
+                        <span>8.0 Rating</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi suscipit, repellat nobis dolore laboriosam incidunt autem asperiores Veritatis, officiis.</p>
+                        <div class="b5cardfoot">
+                           <h6>4 Days 3 Night</h6> 
+                        </div>
+                    </div>
+                    </div>              
+                </div>       
+
+                <div class="item b5item">
+                    <div class="b5card">
+                        <img src="image/peru2.jpg"/>
+                    <div class="b5itemdetails">
+                        <div class="b5head">
+                            <h5>peru</h5>
+                            <h6>$1500</h6>
+                        </div>
+                        <br/>
+                        <span>8.2 Rating</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi suscipit, repellat nobis dolore laboriosam incidunt autem asperiores Veritatis, officiis.</p>
+                        <div class="b5cardfoot">
+                           <h6>4 Days 3 Night</h6> 
+                        </div>
+                    </div>
+                    </div>              
+                </div>     
+                
+                <div class="item b5item">
+                    <div class="b5card">
+                        <img src="image/sweden.jpg"/>
+                    <div class="b5itemdetails">
+                        <div class="b5head">
+                            <h5>sweden</h5>
+                            <h6>$1000</h6>
+                        </div>
+                        <br/>
+                        <span>9.1 Rating</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi suscipit, repellat nobis dolore laboriosam incidunt autem asperiores Veritatis, officiis.</p>
+                        <div class="b5cardfoot">
+                           <h6>6 Days 5 Night</h6> 
+                        </div>
+                    </div>
+                    </div>              
+                </div>     
+
+                <div class="item b5item">
+                    <div class="b5card">
+                        <img src="image/miami-florida.jpg"/>
+                    <div class="b5itemdetails">
+                        <div class="b5head">
+                            <h5>florida</h5>
+                            <h6>$2500</h6>
+                        </div>
+                        <br/>
+                        <span>8.5 Rating</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi suscipit, repellat nobis dolore laboriosam incidunt autem asperiores Veritatis, officiis.</p>
+                        <div class="b5cardfoot">
+                           <h6>3 Days 2 Night</h6> 
+                        </div>
+                    </div>
+                    </div>              
+                </div>     
+
+                <div class="item b5item">
+                    <div class="b5card">
+                        <img src="image/delhi2.jpg"/>
+                    <div class="b5itemdetails">
+                        <div class="b5head">
+                            <h5>delhi</h5>
+                            <h6>$700</h6>
+                        </div>
+                        <br/>
+                        <span>9.0 Rating</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi suscipit, repellat nobis dolore laboriosam incidunt autem asperiores Veritatis, officiis.</p>
+                        <div class="b5cardfoot">
+                           <h6>7 Days 6 Night</h6> 
+                        </div>
+                    </div>
+                    </div>              
+                </div>     
+
+                <div class="item b5item">
+                    <div class="b5card">
+                        <img src="image/mexico.jpg"/>
+                    <div class="b5itemdetails">
+                        <div class="b5head">
+                            <h5>mexico</h5>
+                            <h6>$2500</h6>
+                        </div>
+                        <br/>
+                        <span>8.2 Rating</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi suscipit, repellat nobis dolore laboriosam incidunt autem asperiores Veritatis, officiis.</p>
+                        <div class="b5cardfoot">
+                           <h6>3 Days 2 Night</h6> 
+                        </div>
+                    </div>
+                    </div>              
+                </div>     
+
+                <div class="item b5item">
+                    <div class="b5card">
+                        <img src="image/lakshadweep.jpg"/>
+                    <div class="b5itemdetails">
+                        <div class="b5head">
+                            <h5>lakshadweep</h5>
+                            <h6>$2000</h6>
+                        </div>
+                        <br/>
+                        <span>8.6 Rating</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi suscipit, repellat nobis dolore laboriosam incidunt autem asperiores Veritatis, officiis.</p>
+                        <div class="b5cardfoot">
+                           <h6>5 Days 4 Night</h6> 
+                        </div>
+                    </div>
+                    </div>              
+                </div>     
+
+                <div class="item b5item">
+                    <div class="b5card">
+                        <img src="image/indonesia1.jpg"/>
+                    <div class="b5itemdetails">
+                        <div class="b5head">
+                            <h5>indonesia</h5>
+                            <h6>$1000</h6>
+                        </div>
+                        <br/>
+                        <span>8.5 Rating</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi suscipit, repellat nobis dolore laboriosam incidunt autem asperiores Veritatis, officiis.</p>
+                        <div class="b5cardfoot">
+                           <h6>5 Days 4 Night</h6> 
+                        </div>
+                    </div>
+                    </div>              
+                </div>     
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--BANNER_6-->
+
+<section class="banner_6">
+    <div class="container">
+        <div class="b6content">
+            <div class="map">
+                <h6  data-aos="zoom-out-up" data-aos-duration="1000">our <span>location</span></h6>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29409.81701965477!2d88.39892626143688!3d22.868066712843284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1703694176363!5m2!1sen!2sin" width="" height="" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" data-aos="fade-up"  data-aos-duration="1000"></iframe>
+            </div>
+            <div class="loginform" data-aos="fade-down"  data-aos-duration="1000">
+                <h5>connect with us</h5>
+                <form  autocomplete="off">
+                    <div class="username">
+                    <input type="text" name="username" placeholder="username" id="user" required>
+                    <label for="user"><i class="fa-solid fa-user"></i></label>
+                    </div>
+                  
+                    <div class="email">
+                        <input type="email" name="email" placeholder="email id" id="mail" required>
+                        <label for="mail"><i class="fa-solid fa-envelope"></i></label>
+                    </div>
+                    
+                    <div class="password">
+                        <input type="password" name="password" placeholder="password" id="pass" required>
+                        <label for="pass"><i class="fa-solid fa-eye-slash"></i></label>
+                    </div>
+     
+                    <h5><a href="">forgot password?</a></h5>
+                    <button type="submit">log in</button>
+                    <h6>or login with</h6>
+                    <div class="social_login">
+                        <h6><a href=><i class="fa-brands fa-facebook-f"></i>&nbsp;&nbsp; facebook</a></h6>
+                        <h6><a href=""><i class="fa-brands fa-instagram"></i>&nbsp;&nbsp; instagram</a></h6>
+                    </div>
+                    <h6>don't have an account? <a href="signup.html#signupid">sign up now</a></h6>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+<!--BANNER_7-->
+
+<section class="banner_7">
+   <div class="container">
+      <div class="b7text">
+        <h4 data-aos="zoom-in" data-aos-duration="1000">what our <span>clients</span> says about us!</h4>
+        <p data-aos="fade-up" data-aos-duration="1000">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas vel in corrupti itaque, porro beatae tenetur incidunt assumenda optio voluptate fugit.</p>
+      </div>
+
+      <div class="b7content">
+    
+        <div class="owl-carousel owl-theme b7slide">
+
+            <div class="item b7item">
+                <div class="b7card">
+                    <div class="b7cardimg">
+                        <img src="image/man2.jpg" alt="">
+                    </div>
+                    <div class="b7cardcontent">
+                        <p><i class="fa-solid fa-quote-left"></i>&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ut beatae non ex animi eum deserunt magni, voluptates aliquam maxime esse, libero.&nbsp;&nbsp;<i class="fa-solid fa-quote-right"></i></p>
+                        <h6>John Doe</h6>
+                        <p class="profession">solo traveler</p>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="item b7item">
+                <div class="b7card">
+                    <div class="b7cardimg">
+                        <img src="image/man3.jpg" alt="">
+                    </div>
+                    <div class="b7cardcontent">
+                        <p><i class="fa-solid fa-quote-left"></i>&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ut beatae non ex animi eum deserunt magni, voluptates aliquam maxime esse, libero.&nbsp;&nbsp;<i class="fa-solid fa-quote-right"></i></p>
+                        <h6>charles diu</h6>
+                        <p class="profession">solo traveler</p>
+                    </div>
+                </div>
+            </div>
+           
+
+            <div class="item b7item">
+                <div class="b7card">
+                    <div class="b7cardimg">
+                        <img src="image/female1.jpg" alt="">
+                    </div>
+                    <div class="b7cardcontent">
+                        <p><i class="fa-solid fa-quote-left"></i>&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ut beatae non ex animi eum deserunt magni, voluptates aliquam maxime esse, libero.&nbsp;&nbsp;<i class="fa-solid fa-quote-right"></i></p>
+                        <h6>Marcello laurent</h6>
+                        <p class="profession">blogger</p>
+                    </div>
+                </div>
+            </div>
+           
+
+            <div class="item b7item">
+                <div class="b7card">
+                    <div class="b7cardimg">
+                        <img src="image/man4.jpg" alt="">
+                    </div>
+                    <div class="b7cardcontent">
+                        <p><i class="fa-solid fa-quote-left"></i>&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ut beatae non ex animi eum deserunt magni, voluptates aliquam maxime esse, libero.&nbsp;&nbsp;<i class="fa-solid fa-quote-right"></i></p>
+                        <h6> Marco hugo</h6>
+                        <p class="profession">solo traveler</p>
+                    </div>
+                </div>
+            </div>
+           
+
+            <div class="item b7item">
+                <div class="b7card">
+                    <div class="b7cardimg">
+                        <img src="image/female2.jpg" alt="">
+                    </div>
+                    <div class="b7cardcontent">
+                        <p><i class="fa-solid fa-quote-left"></i>&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ut beatae non ex animi eum deserunt magni, voluptates aliquam maxime esse, libero.&nbsp;&nbsp;<i class="fa-solid fa-quote-right"></i></p>
+                        <h6>Adelina ai</h6>
+                        <p class="profession">traveler</p>
+                    </div>
+                </div>
+            </div>
+           
+
+            <div class="item b7item">
+                <div class="b7card">
+                    <div class="b7cardimg">
+                        <img src="image/female3.jpg" alt="">
+                    </div>
+                    <div class="b7cardcontent">
+                        <p><i class="fa-solid fa-quote-left"></i>&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ut beatae non ex animi eum deserunt magni, voluptates aliquam maxime esse, libero.&nbsp;&nbsp;<i class="fa-solid fa-quote-right"></i></p>
+                        <h6>Cathenna chiyo</h6>
+                        <p class="profession">blogger</p>
+                    </div>
+                </div>
+            </div>
+           
+
+            <div class="item b7item">
+                <div class="b7card">
+                    <div class="b7cardimg">
+                        <img src="image/female4.jpg" alt="">
+                    </div>
+                    <div class="b7cardcontent">
+                        <p><i class="fa-solid fa-quote-left"></i>&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ut beatae non ex animi eum deserunt magni, voluptates aliquam maxime esse, libero.&nbsp;&nbsp;<i class="fa-solid fa-quote-right"></i></p>
+                        <h6>Francesca keiko</h6>
+                        <p class="profession">solo traveler</p>
+                    </div>
+                </div>
+            </div>
+           
+
+            <div class="item b7item">
+                <div class="b7card">
+                    <div class="b7cardimg">
+                        <img src="image/man3.jpg" alt="">
+                    </div>
+                    <div class="b7cardcontent">
+                        <p><i class="fa-solid fa-quote-left"></i>&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ut beatae non ex animi eum deserunt magni, voluptates aliquam maxime esse, libero.&nbsp;&nbsp;<i class="fa-solid fa-quote-right"></i></p>
+                        <h6>Steffan tao</h6>
+                        <p class="profession">traveler</p>
+                    </div>
+                </div>
+            </div>
+           
+
+            <div class="item b7item">
+                <div class="b7card">
+                    <div class="b7cardimg">
+                        <img src="image/female5.jpg" alt="">
+                    </div>
+                    <div class="b7cardcontent">
+                        <p><i class="fa-solid fa-quote-left"></i>&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ut beatae non ex animi eum deserunt magni, voluptates aliquam maxime esse, libero.&nbsp;&nbsp;<i class="fa-solid fa-quote-right"></i></p>
+                        <h6>Marielia niyamh</h6>
+                        <p class="profession"> traveler</p>
+                    </div>
+                </div>
+            </div>
+           
+
+            <div class="item b7item">
+                <div class="b7card">
+                    <div class="b7cardimg">
+                        <img src="image/female1.jpg" alt="">
+                    </div>
+                    <div class="b7cardcontent">
+                        <p><i class="fa-solid fa-quote-left"></i>&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ut beatae non ex animi eum deserunt magni, voluptates aliquam maxime esse, libero.&nbsp;&nbsp;<i class="fa-solid fa-quote-right"></i></p>
+                        <h6>Elanie faina</h6>
+                        <p class="profession">blogger</p>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+          
+         
+      </div>
+   </div>
+</section>
+
+
+<!--BANNER_8-->
+
+<section class="banner_8" id="b8blogging">
+   <div class="container">
+
+    <div class="b8head">
+        <h6 data-aos="zoom-in" data-aos-duration="1000">latest <span>blog</span> post</h6>
+        <p data-aos="fade-up" data-aos-duration="1000">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio odit culpa voluptatem possimus vitae, animi porro optio dolorum.</p>
+    </div>
+
+    <div class="blog">
+
+        <div class="swiper mySwiper blogslide">
+            <div class="swiper-wrapper b8wrap">
+              <div class="swiper-slide b8slide">
+               
+                <div class="blogcard">
+                    <div class="blogimg">
+                        <img src="image/camel.jpg" alt="">
+                    </div>
+                    <div class="blogcontent">
+                        <h6>montezuma's revenge</h6>
+                        <p>Yes, for all you pedants out there, I know Montezuma is Mexican but the reference is related to the very authentic curry stir fry noodles in the Mexican buffet which did not agree with me AT ALL and rendered me horizontal for the entire day.&nbsp;&nbsp; <a href="https://www.travelblog.org/Bloggers/Warey/">Read more...</a></p>
+                    </div>
+                    <div class="bloggerdetails">
+                        <div class="bloggerphoto">
+                            <img src="image/usericon.jpg" alt="">
+                            <h5>christine atkins</h5>
+                        </div>
+                        <h6>27th december,2023</h6>
+                    </div>
+                </div>
+
+              </div>
+
+              <div class="swiper-slide b8slide">     
+
+                <div class="blogcard">
+                    <div class="blogimg">
+                        <img src="image/honolulu.jpg" alt="">
+                    </div>
+                    <div class="blogcontent">
+                        <h6>sunset cruise Honolulu</h6>
+                        <p>The Sunset cruise was amazing. We booked with Viator and the checkin was slick. Our wristband denoted our main course choice for our 3 course meal. &nbsp;&nbsp; <a href="https://www.travelblog.org/Bloggers/Travelynne/">Read more...</a></p>
+                    </div>
+                    <div class="bloggerdetails">
+                        <div class="bloggerphoto">
+                            <img src="image/usericon.jpg" alt="">
+                            <h5>travelynne</h5>
+                        </div>
+                        <h6>6th november, 2023</h6>
+                    </div>
+                </div>
+              </div>
+
+
+              <div class="swiper-slide b8slide">
+                <div class="blogcard">
+                    <div class="blogimg">
+                        <img src="image/america1.jpg" alt="">
+                    </div>
+                    <div class="blogcontent">
+                        <h6>travelling northbound</h6>
+                        <p>We had originally made plans to travel south along 101 at the beginning of our trip, however the weather was not with us thwre were 35 feet waves crashing the shores and high winds, which is why we headed south and east.&nbsp;&nbsp; <a href="https://www.travelblog.org/Bloggers/Jacqui-and-Keith/">Read more...</a></p>
+                    </div>
+                    <div class="bloggerdetails">
+                        <div class="bloggerphoto">
+                            <img src="image/usericon.jpg" alt="">
+                            <h5>Jacqui-and-Keith</h5>
+                        </div>
+                        <h6>15th october, 2023</h6>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide b8slide">
+                <div class="blogcard">
+                    <div class="blogimg">
+                        <img src="image/jaipur.jpg" alt="">
+                    </div>
+                    <div class="blogcontent">
+                        <h6>journeying to jweles in jaipur</h6>
+                        <p>With half closed eyes we ordered an Uber from the hostel and traversed through dimly lit Jaipur. We got out at a beautiful sandstone gate that was blocked by cows and dogs. &nbsp;&nbsp; <a href="https://www.travelblog.org/Bloggers/Hattie-and-Grace/">Read more...</a></p>
+                    </div>
+                    <div class="bloggerdetails">
+                        <div class="bloggerphoto">
+                            <img src="image/usericon.jpg" alt="">
+                            <h5>Hattie-and-Grace</h5>
+                        </div>
+                        <h6>22nd december, 2023</h6>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide b8slide">
+                <div class="blogcard">
+                    <div class="blogimg">
+                        <img src="image/greece2.jpg" alt="">
+                    </div>
+                    <div class="blogcontent">
+                        <h6>athens, Greece</h6>
+                        <p>Today we hit the big smoke of Athens, I cant believe that it has been nearly 30 years since I first hauled myself up the steps of the Acropolis to see the 2,500 year old Parthenon &nbsp;&nbsp; <a href="https://www.travelblog.org/Bloggers/MamaBadger/">Read more...</a></p>
+                    </div>
+                    <div class="bloggerdetails">
+                        <div class="bloggerphoto">
+                            <img src="image/usericon.jpg" alt="">
+                            <h5>MamaBadger</h5>
+                        </div>
+                        <h6>3rd november, 2023</h6>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide b8slide">
+                <div class="blogcard">
+                    <div class="blogimg">
+                        <img src="image/newzealand.jpg" alt="">
+                    </div>
+                    <div class="blogcontent">
+                        <h6>oceania, new zealand</h6>
+                        <p>It's been three weeks and I had the beginning of a new psts sitting in my drafts for like half that time. Anyway here a rundown of the things that happend since the Milford Sound cruise:&nbsp;&nbsp; <a href="https://www.travelblog.org/Bloggers/giovannapiro/">Read more...</a></p>
+                    </div>
+                    <div class="bloggerdetails">
+                        <div class="bloggerphoto">
+                            <img src="image/usericon.jpg" alt="">
+                            <h5>giovanna piro</h5>
+                        </div>
+                        <h6>28th november, 2023</h6>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide b8slide">
+                <div class="blogcard">
+                    <div class="blogimg">
+                        <img src="image/sea2.jpg" alt="">
+                    </div>
+                    <div class="blogcontent">
+                        <h6>san francisco</h6>
+                        <p>Imagine a cut price Ryanair, without the frills. Then you have Spirit Airlines, the low cost airline in the US. When I advised my hosts that I was using Spirit to fly from Philadelphia to the west coast, they proceeded to laugh.&nbsp;&nbsp; <a href="https://www.travelblog.org/Bloggers/Madridlion/">Read more...</a></p>
+                    </div>
+                    <div class="bloggerdetails">
+                        <div class="bloggerphoto">
+                            <img src="image/usericon.jpg" alt="">
+                            <h5>Madridlion</h5>
+                        </div>
+                        <h6>15th august, 2023</h6>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide b8slide">
+                <div class="blogcard">
+                    <div class="blogimg">
+                        <img src="image/pyrenees.jpg" alt="">
+                    </div>
+                    <div class="blogcontent">
+                        <h6>pyrenees and into spain</h6>
+                        <p>Just the sheer magnificence of being surrounded by the mountains took our breath away.&nbsp;&nbsp; <a href="https://www.travelblog.org/Bloggers/AvisBus/">Read more...</a></p>
+                    </div>
+                    <div class="bloggerdetails">
+                        <div class="bloggerphoto">
+                            <img src="image/usericon.jpg" alt="">
+                            <h5>AvisBus</h5>
+                        </div>
+                        <h6>11th october, 2023</h6>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide b8slide">
+                <div class="blogcard">
+                    <div class="blogimg">
+                        <img src="image/grandcanyon.jpg" alt="">
+                    </div>
+                    <div class="blogcontent">
+                        <h6>grand canyon</h6>
+                        <p>So this morning I started at the visitor center about 4:30 AM. By 4:45 I was starting my run on the rim trail towards the South Kaibab trailhead. &nbsp;&nbsp; <a href="https://www.travelblog.org/Bloggers/Brucef/">Read more...</a></p>
+                    </div>
+                    <div class="bloggerdetails">
+                        <div class="bloggerphoto">
+                            <img src="image/usericon.jpg" alt="">
+                            <h5>Brucef</h5>
+                        </div>
+                        <h6>21st may, 2023</h6>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+    </div>
+   </div>
+</section>
+
+
+<!--FOOTER-->
+
+<footer>
+    <div class="footer" id="footer_contact">
+        <div class="container">
+            <div class="footercontent">
+
+                <div class="footcontent1" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="footlogo">
+                        <img src="image/logo.png" alt="">
+                    </div>                
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem exercitationem placeat earum esse.</p>
+                </div>
+
+                <div class="footcontent2" data-aos="fade-down" data-aos-duration="1000">
+                    <h6>support</h6>
+                    <ul>
+                        <li><a href="">customer support</a></li>
+                        <li><a href="">privacy & policy</a></li>
+                        <li><a href="">contact channels</a></li>
+                    </ul>
+                </div>
+
+                <div class="footcontent3" data-aos="fade-up" data-aos-duration="1000">
+                    <h6><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;call us</h6>
+                    <p>+31-548-4598-28</p>
+                    <h6><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;&nbsp;EMAIL</h6>
+                    <p>dsahakol2014@gmail.com</p>
+                </div>
+
+                <div class="footcontent4" data-aos="fade-down" data-aos-duration="1000">
+                    <h6>pay safely with us</h6>
+                    <p>The payment is encrypted and transmitted securely with an SSL protocol.</p>
+                    <ul>
+                        <li><a href="">
+                            <img src="image/americanexpress.png" alt="">
+                        </a></li>
+                        <li><a href="">
+                            <img src="image/mastercard.png" alt="">
+                        </a></li>
+                        <li><a href="">
+                            <img src="image/visa.png" alt="">
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="social_icon">
+                <h6>folow us on</h6>
+                <ul>
+                    <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+                </ul>
+                
+            </div>
+        </div>      
+    </div>
+</footer>
+
+<!--COPYRIGHT-->
+
+<section class="copyright">
+    <div class="container">
+        <div class="copyright_content">
+            <h6>Copyright © 2023 GoodLayers. All Rights Reserved.</h6>
+            <h6>design developed by dipanwita saha</h6>
+        </div>
+    </div>
+    
+</section>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
+<script>
+    AOS.init();
+  </script>
+
+<script>
+let form = document.querySelector("form");
+
+form.addEventListener("submit",function(){
+ form.preventDefault();
+});
+</script>
+
+
+  
+
+
+
+</body>
+</html>
